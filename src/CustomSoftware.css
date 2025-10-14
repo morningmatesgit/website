@@ -1,0 +1,791 @@
+/* Hero Section Styles for the SoftwareDevelopmentHero Component */
+.software-hero-section {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 6rem 1rem;
+}
+
+.software-hero-container {
+  max-width: 84rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .software-hero-container {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+.software-hero-text {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .software-hero-text {
+    width: 60%;
+    margin-bottom: 0;
+  }
+}
+
+.software-hero-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .software-hero-title {
+    font-size: 3.75rem;
+  }
+}
+
+.software-hero-subtitle {
+  font-size: 1rem;
+  line-height: 1.625;
+  color: #cbd5e1;
+  max-width: 42rem;
+  margin: 0 auto 2rem;
+}
+
+@media (min-width: 768px) {
+  .software-hero-subtitle {
+    font-size: 1.125rem;
+    margin: 0 0 2rem 0;
+  }
+}
+
+.software-contact-button {
+  background-color: #facc15;
+  color: #0f172a;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter;
+  transition-duration: 300ms;
+  cursor: pointer;
+  border: none;
+}
+
+.software-contact-button:hover {
+  background-color: #fde047;
+}
+
+/* Review Section */
+.software-hero-reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .software-hero-reviews {
+    width: 40%;
+  }
+}
+
+.software-review-stars {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.software-stars-container {
+  display: flex;
+  color: #facc15;
+}
+
+.software-clutch-reviews {
+  font-size: 0.875rem;
+  color: #e2e8f0;
+}
+
+.software-clutch-reviews span {
+  font-weight: 700;
+}
+/* Custom Software Services Section */
+.software-services-section {
+  background-color: #0f172a;
+  color: #fff;
+  padding: 6rem 1rem;
+}
+
+.software-services-container {
+  max-width: 84rem;
+  margin: 0 auto;
+}
+
+.software-services-title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .software-services-title {
+    font-size: 2.25rem;
+  }
+}
+
+.software-services-grid {
+  border-top: 1px solid #475569;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .software-services-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.software-services-content {
+  width: 100%;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .software-services-content {
+    width: 50%;
+    margin-bottom: 0;
+    padding-right: 3rem;
+    text-align: left;
+  }
+}
+
+.software-services-subtitle {
+  font-size: 1.875rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.software-services-description {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin-bottom: 1.5rem;
+}
+
+.software-learn-more-link {
+  display: inline-flex;
+  align-items: center;
+  color: #facc15;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.software-learn-more-link:hover {
+  text-decoration: underline;
+}
+
+.software-services-cards-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .software-services-cards-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.software-service-card {
+  background-color: #1e293b;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.software-service-card:hover {
+  transform: scale(1.05);
+}
+/* General styling */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f172a;
+  color: #fff;
+}
+
+
+
+.icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a;
+  border-radius: 50%;
+}
+
+.icon-wrapper svg {
+  color: #facc15;
+}
+
+.card-text {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+
+/* Section styling */
+.mobile-section {
+  background-color: #0f172a; /* Dark background (you can change) */
+  color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Container to center content */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Title */
+.mobile-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Subtitle */
+.mobile-section p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin-bottom: 2.5rem;
+}
+
+/* Cards wrapper */
+.cards {
+  display: flex;
+  justify-content: center;   
+  align-items: stretch;      
+  flex-wrap: wrap;           
+  gap: 2rem;                 
+}
+
+/* Individual card */
+.card {
+  background: #1e293b;       
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 220px;
+  max-width: 280px;
+  flex: 1 1 250px;           
+  transition: transform 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Icon inside card */
+.card svg {
+  margin-bottom: 1rem;
+  color: #38bdf8;           /* cyan accent */
+}
+
+/* Card title */
+.card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+/* MobileCss */
+/* Overall container for the component */
+/* Container */
+.AppDevOps-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a;
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Section layout */
+.AppDevOps-section {
+  max-width: 1200px;
+  margin: 0 auto 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 1024px) {
+  .AppDevOps-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.AppDevOps-content {
+  text-align: left;
+  max-width: 500px;
+}
+
+
+.AppDevOps-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.AppDevOps-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.AppDevOps-learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.AppDevOps-learn-more:hover {
+  transform: translateX(5px);
+}
+
+/* GRID layout for service cards */
+.AppDevOps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* auto responsive */
+  gap: 2rem;
+  width: 100%;
+  align-items: stretch; /* makes all cards equal height */
+}
+
+/* If you want fixed layouts */
+.AppDevOps-grid-four {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.AppDevOps-grid-six {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+@media (min-width: 768px) {
+  .AppDevOps-grid-four {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .AppDevOps-grid-six {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual cards */
+.AppDevOps-card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers text */
+  align-items: center;
+  min-height: 180px; /* ensures equal height cards */
+}
+
+.AppDevOps-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon box */
+.AppDevOps-icon-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.AppDevOps-icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: #ffc107;
+}
+
+/* Card text */
+.AppDevOps-card-text {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+
+/* SoftwareDev */
+/* Overall container for the section */
+.SoftwareDevProcess-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; /* Dark background color */
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background gradient effects */
+.SoftwareDevProcess-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(255, 193, 7, 0.2) 0%, transparent 60%);
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Header section with title and description */
+.SoftwareDevProcess-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .SoftwareDevProcess-header {
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+  }
+}
+
+.SoftwareDevProcess-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .SoftwareDevProcess-title {
+    font-size: 3rem;
+  }
+}
+
+.SoftwareDevProcess-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Grid layout for the cards */
+.SoftwareDevProcess-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .SoftwareDevProcess-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .SoftwareDevProcess-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual card styling */
+.SoftwareDevProcess-card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect: turns card yellow */
+.SoftwareDevProcess-card:hover {
+  background-color: #ffc107; /* Yellow background */
+  color: #0c0d1b; /* Dark text for contrast */
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(250, 204, 21, 0.4);
+}
+
+.SoftwareDevProcess-card:hover .SoftwareDevProcess-icon-box {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.SoftwareDevProcess-card:hover .SoftwareDevProcess-icon-box svg {
+  color: #0c0d1b;
+}
+
+.SoftwareDevProcess-card:hover .SoftwareDevProcess-number {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.SoftwareDevProcess-card:hover .SoftwareDevProcess-card-heading {
+  color: #0c0d1b;
+}
+
+.SoftwareDevProcess-card:hover .SoftwareDevProcess-card-text {
+  color: #333;
+}
+
+/* Icon and number positioning */
+.SoftwareDevProcess-card-icon-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.SoftwareDevProcess-icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1);
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.SoftwareDevProcess-icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: #ffc107;
+  transition: all 0.3s ease;
+}
+
+.SoftwareDevProcess-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.1);
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+
+.SoftwareDevProcess-card-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.SoftwareDevProcess-card-text {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+
+
+/* SoftwareWork */
+/* Overall container for the section */
+/* Overall container for the section */
+.WorkWithUs-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; /* Dark background color */
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background gradient effects */
+.WorkWithUs-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 60%); /* Subtle purple glow */
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.WorkWithUs-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .WorkWithUs-title {
+    font-size: 3rem;
+  }
+}
+
+/* Grid layout for the cards */
+.WorkWithUs-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 900px; /* Adjust max-width to match the image */
+  margin: 0 auto 3rem;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .WorkWithUs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual card styling */
+.WorkWithUs-card {
+  background-color: #1e293b; /* Darker blue-gray */
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.WorkWithUs-card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(145deg, #6b21a8, #8b5cf6); /* Purple gradient on hover */
+  border: none;
+  box-shadow: 0 8px 20px rgba(138, 43, 226, 0.4);
+}
+
+/* Icon box */
+.WorkWithUs-icon-box {
+  width: 60px; /* Larger icon box */
+  height: 60px; /* Larger icon box */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1); /* Light yellow background */
+  border-radius: 12px; /* More rounded */
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.WorkWithUs-card:hover .WorkWithUs-icon-box {
+  background-color: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
+}
+
+.WorkWithUs-icon-box svg {
+  width: 32px; /* Larger SVG icon */
+  height: 32px; /* Larger SVG icon */
+  color: #ffc107; /* Yellow color for icons */
+  transition: color 0.3s ease;
+}
+
+.WorkWithUs-card:hover .WorkWithUs-icon-box svg {
+  color: #fff; /* White icon color on hover */
+}
+
+.WorkWithUs-card-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.WorkWithUs-card:hover .WorkWithUs-card-heading {
+  color: #fff; /* Ensure heading stays visible on gradient */
+}
+
+/* Call-to-action button */
+.WorkWithUs-cta-button {
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.WorkWithUs-cta-button:hover {
+  background-color: #ffc107; 
+  color: #0c0d1b;
+  border-color: #ffc107;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}

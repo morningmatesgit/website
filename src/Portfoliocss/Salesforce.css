@@ -1,0 +1,288 @@
+.salesforce-container {
+  --salesforce-bg-color: #0f172a;
+  --salesforce-text-color-primary: #f8fafc;
+  --salesforce-text-color-secondary: #94a3b8;
+  --salesforce-yellow-accent: #facc15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--salesforce-bg-color);
+}
+
+.salesforce-card-container {
+  background-color: var(--salesforce-bg-color);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.salesforce-text-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.salesforce-subtitle {
+  color: var(--salesforce-text-color-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+}
+
+.salesforce-title {
+  color: var(--salesforce-text-color-primary);
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0.75rem 0 1rem 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.salesforce-description {
+  color: var(--salesforce-text-color-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.salesforce-download-button {
+  background-color: var(--salesforce-yellow-accent);
+  color: #0f172a;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.salesforce-download-button:hover {
+  background-color: #f5cf07;
+  transform: translateY(-2px);
+}
+
+.salesforce-image-section {
+  flex-shrink: 0;
+}
+
+.salesforce-image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .salesforce-card-container {
+    flex-direction: column;
+  }
+  .salesforce-text-section {
+    padding: 1.5rem;
+  }
+  .salesforce-title {
+    font-size: 1.75rem;
+  }
+}
+/* SalesforceChallenge */
+.salesforce-container {
+  background-color: #0f172a;
+  background-image: radial-gradient(circle at 50% 50%, rgba(31, 41, 55, 0.7) 0%, rgba(15, 23, 42, 0.7) 100%);
+  color: #f8fafc;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.salesforce-challenge-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.salesforce-challenge-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.salesforce-challenge-description {
+  color: #94a3b8;
+  font-size: 1.125rem;
+  margin: 0.5rem 0 0;
+}
+
+.salesforce-cards-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  max-width: 1100px;
+}
+
+.salesforce-card {
+  background-color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.salesforce-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.salesforce-card-icon {
+  color: #facc15;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.salesforce-card-title {
+  color: #f8fafc;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.salesforce-card-description {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .salesforce-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .salesforce-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  .salesforce-challenge-title {
+    font-size: 2rem;
+  }
+}
+/* SalesforceResults */
+
+          .salesforce-container {
+            background-color: #0f172a;
+            color: #f8fafc;
+            min-height: 100vh;
+            padding: 4rem 2rem;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .salesforce-section-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            max-width: 600px;
+          }
+
+          .salesforce-header-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 0;
+          }
+
+          .salesforce-header-description {
+            color: #94a3b8;
+            font-size: 1.125rem;
+            margin-top: 0.5rem;
+          }
+
+          .salesforce-cards-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            max-width: 1100px;
+          }
+
+          .salesforce-card {
+            background-color: #1e293b;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            transition: transform 0.2s, box-shadow 0.2s;
+          }
+
+          .salesforce-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+          }
+
+          .salesforce-card-icon {
+            color: #facc15;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            height: 2.5rem;
+            width: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .salesforce-card-icon svg {
+              width: 100%;
+              height: 100%;
+          }
+
+          .salesforce-card-title {
+            color: #f8fafc;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+          }
+
+          .salesforce-card-description {
+            color: #94a3b8;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin: 0;
+          }
+
+          @media (max-width: 1024px) {
+            .salesforce-cards-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+
+          @media (max-width: 640px) {
+            .salesforce-cards-grid {
+              grid-template-columns: 1fr;
+            }
+          }
+        

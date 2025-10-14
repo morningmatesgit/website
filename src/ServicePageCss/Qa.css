@@ -1,0 +1,868 @@
+
+.QAHero-section-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 2rem 1rem 6rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+
+.QAHero-section-container::before {
+  content: '';
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, transparent 70%); /* Cyan glow */
+  filter: blur(150px);
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.QAHero-section-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.35) 0%, transparent 70%); /* Purple glow */
+  filter: blur(150px);
+  z-index: 0;
+  transform: translate(50%, 50%);
+  pointer-events: none;
+}
+
+
+.QAHero-breadcrumb {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 3rem;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.QAHero-breadcrumb-item {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.QAHero-breadcrumb-item:hover {
+  color: #fff;
+}
+
+.QAHero-breadcrumb-separator {
+  color: #cbd5e1;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.QAHero-breadcrumb-active {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.QAHero-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Main title */
+.QAHero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  max-width: 700px; 
+}
+
+@media (min-width: 768px) {
+  .QAHero-title {
+    font-size: 4.5rem;
+  }
+}
+
+
+.QAHero-clutch-review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .QAHero-clutch-review {
+    position: absolute;
+    top: 50%; 
+    right: 1rem;
+    transform: translateY(-50%);
+    align-items: center;
+  }
+}
+
+.QAHero-review-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #a0aec0;
+  margin: 0;
+}
+
+.QAHero-stars {
+  color: #e53e3e;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Description paragraph */
+.QAHero-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 900px;
+}
+
+
+.QAHero-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+
+.QAHero-cta-button {
+  background-color: #ffc107; 
+  color: #0f172a;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.QAHero-cta-button:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* QaServices */
+/* Container for the entire section */
+.QAServices-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background gradient effects (updated for DataHero style) */
+.QAServices-container::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, transparent 70%); 
+  width: 450px;
+  height: 450px;
+  top: 15%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.QAServices-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.35) 0%, transparent 70%); /* Purple glow */
+  width: 550px;
+  height: 550px;
+  bottom: 5%;
+  right: 15%;
+  transform: translate(50%, 50%);
+}
+
+.QAServices-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .QAServices-header {
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.QAServices-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .QAServices-title {
+    font-size: 3rem;
+  }
+}
+
+.QAServices-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+  text-align: left;
+}
+
+
+.QAServices-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .QAServices-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .QAServices-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.QAServices-card {
+  background-color: #1e293b; 
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.QAServices-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.QAServices-icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(56, 189, 248, 0.1); 
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.QAServices-icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: #38bdf8; 
+}
+
+.QAServices-card-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #fff;
+}
+/* QaFlexbile */
+/* Overall container for the section */
+.QAFlexibleModels-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background gradient effects */
+.QAFlexibleModels-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 60%); /* Subtle purple glow */
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Header section with title and description */
+.QAFlexibleModels-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .QAFlexibleModels-header {
+    grid-template-columns: 0.8fr 1.2fr; 
+    align-items: center;
+  }
+}
+
+.QAFlexibleModels-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .QAFlexibleModels-title {
+    font-size: 3rem;
+  }
+}
+
+.QAFlexibleModels-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Grid layout for the cards */
+.QAFlexibleModels-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .QAFlexibleModels-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Individual card styling */
+.QAFlexibleModels-card {
+  background-color: #1e293b; /* Darker blue-gray */
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.QAFlexibleModels-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.QAFlexibleModels-icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1); /* Light yellow background */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.QAFlexibleModels-icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: #ffc107; 
+}
+
+.QAFlexibleModels-card-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.QAFlexibleModels-card-text {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+/* Qaprocess */
+/* Overall container for the section */
+.QAProcess-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background gradient effects */
+.QAProcess-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 60%); /* Subtle purple glow */
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Header section with title and description */
+.QAProcess-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .QAProcess-header {
+    grid-template-columns: 0.8fr 1.2fr; 
+    align-items: center;
+  }
+}
+
+.QAProcess-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .QAProcess-title {
+    font-size: 3rem;
+  }
+}
+
+.QAProcess-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Grid layout for the cards */
+.QAProcess-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .QAProcess-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .QAProcess-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual card styling */
+.QAProcess-card {
+  background-color: #1e293b; /* Darker blue-gray */
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Icon and number positioning */
+.QAProcess-card-icon-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.QAProcess-icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1); /* Light yellow background */
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.QAProcess-icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: #ffc107; /* Yellow color for icons */
+}
+
+.QAProcess-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.1); /* Faded number */
+  line-height: 1;
+}
+
+.QAProcess-card-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.QAProcess-card-text {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+/* QaTools */
+/* Overall container for the section */
+.QATools-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; /* Dark background color */
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background gradient effects */
+.QATools-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 60%); /* Subtle purple glow */
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+
+.QATools-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .QATools-header {
+    grid-template-columns: 0.8fr 1.2fr; 
+    align-items: center;
+  }
+}
+
+.QATools-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .QATools-title {
+    font-size: 3rem;
+  }
+}
+
+.QATools-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Grid layout for the categories */
+.QATools-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .QATools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .QATools-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual category card styling */
+.QATools-category {
+  background-color: #1e293b; 
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.QATools-category-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffc107; /* Yellow color for headings */
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.QATools-category-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 50px;
+  background-color: #ffc107;
+}
+
+.QATools-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.QATools-list li {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.QATools-list li::before {
+  content: '•';
+  color: #ffc107;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.5em;
+  position: absolute;
+  left: 0;
+}
+/* Qawhychoose */
+/* Overall container for the section */
+.WhyChooseQA-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; /* Dark background color */
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background gradient effects */
+.WhyChooseQA-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 60%); /* Subtle purple glow */
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Header section with title and description */
+.WhyChooseQA-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .WhyChooseQA-header {
+    grid-template-columns: 0.8fr 1.2fr; /* Adjust column width for title and description */
+    align-items: center;
+  }
+}
+
+.WhyChooseQA-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .WhyChooseQA-title {
+    font-size: 3rem;
+  }
+}
+
+.WhyChooseQA-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Grid layout for the cards */
+.WhyChooseQA-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .WhyChooseQA-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Individual card styling */
+.WhyChooseQA-card {
+  background-color: #1e293b; /* Darker blue-gray */
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.WhyChooseQA-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.WhyChooseQA-icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1); /* Light yellow background */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.WhyChooseQA-icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: #ffc107; /* Yellow color for icons */
+}
+
+.WhyChooseQA-card-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.WhyChooseQA-card-text {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}

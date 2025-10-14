@@ -1,0 +1,532 @@
+
+.Data-hero-section-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 2rem 1rem 6rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+
+.Data-hero-section-container::before,
+.Data-hero-section-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.Data-hero-section-container::before {
+  background: radial-gradient(circle, rgba(56,189,248,0.4) 0%, transparent 70%); 
+  width: 400px;
+  height: 400px;
+  top: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.Data-hero-section-container::after {
+  background: radial-gradient(circle, rgba(139,92,246,0.4) 0%, transparent 70%);
+  width: 500px;
+  height: 500px;
+  bottom: 5%;
+  right: 15%;
+  transform: translate(50%, 50%);
+}
+
+
+.Data-breadcrumb {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 3rem;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.Data-breadcrumb-item {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.Data-breadcrumb-item:hover {
+  color: #fff;
+}
+
+.Data-breadcrumb-separator {
+  color: #cbd5e1;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.Data-breadcrumb-active {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.Data-hero-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+
+.Data-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .Data-hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+/* Description paragraph */
+.Data-hero-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+}
+
+/* Call-to-action button */
+.Data-cta-button {
+  background-color: #facc15; 
+  color: #000; 
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s ease, transform 0.3s ease;
+ 
+}
+
+.Data-cta-button:hover {
+  background-color: #fcd34d; 
+  transform: scale(1.05);
+}
+
+/* //Dataservice */
+
+.Data-services-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.Data-services-container::before,
+.Data-services-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.Data-services-container::before {
+  background: radial-gradient(circle, rgba(56,189,248,0.4) 0%, transparent 70%); /* Cyan glow */
+  width: 400px;
+  height: 400px;
+  top: 10%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.Data-services-container::after {
+  background: radial-gradient(circle, rgba(139,92,246,0.4) 0%, transparent 70%); /* Purple glow */
+  width: 500px;
+  height: 500px;
+  bottom: 5%;
+  right: 15%;
+  transform: translate(50%, 50%);
+}
+
+/* Header section */
+.Data-services-header {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  z-index: 1;
+  position: relative;
+}
+
+.Data-services-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.Data-services-subtitle {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .Data-services-header {
+    text-align: left;
+  }
+}
+
+/* Services grid layout */
+.Data-services-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .Data-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .Data-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.Data-service-item {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Data-service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.Data-service-icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.Data-service-icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: #ffc107; 
+}
+
+.Data-service-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0; 
+  color: #fff;
+}
+
+
+/* Data Observability */
+
+.Data-observability-benefits-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.Data-observability-benefits-container::before,
+.Data-observability-benefits-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(150px);
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.Data-observability-benefits-container::before {
+  width: 500px;
+  height: 500px;
+  top: 20%;
+  left: 20%;
+  background: radial-gradient(circle, rgba(56,189,248,0.35) 0%, transparent 70%); 
+  transform: translate(-50%, -50%);
+}
+
+.Data-observability-benefits-container::after {
+  width: 600px;
+  height: 600px;
+  bottom: 10%;
+  right: 15%;
+  background: radial-gradient(circle, rgba(139,92,246,0.35) 0%, transparent 70%); /* Purple glow */
+  transform: translate(50%, 50%);
+}
+
+/* Section title styling */
+.Data-observability-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  position: relative;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .Data-observability-title {
+    font-size: 3rem;
+  }
+}
+
+/* Benefits grid layout */
+.Data-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .Data-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .Data-benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual benefit card styling */
+.Data-benefit-card {
+  background-color: #1e293b; 
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Data-benefit-card:hover {
+  background-color: #ffc107;
+  border-color: #ffc107; 
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.Data-benefit-card:hover .Data-benefit-text {
+  color: #0c0d1b; 
+}
+
+.Data-benefit-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff; /* White text by default */
+  margin: 0;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+/* Data Apply */
+
+.Data-applied-observability-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+
+.Data-applied-observability-container::before,
+.Data-applied-observability-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.Data-applied-observability-container::before {
+  width: 450px;
+  height: 450px;
+  top: 15%;
+  left: 20%;
+  background: radial-gradient(circle, rgba(56,189,248,0.35) 0%, transparent 70%); /* Cyan glow */
+  transform: translate(-50%, -50%);
+}
+
+.Data-applied-observability-container::after {
+  width: 550px;
+  height: 550px;
+  bottom: 10%;
+  right: 15%;
+  background: radial-gradient(circle, rgba(139,92,246,0.35) 0%, transparent 70%); /* Purple glow */
+  transform: translate(50%, 50%);
+}
+
+/* Header section with title, statistic, and main description */
+.Data-observability-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .Data-observability-header {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.Data-header-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .Data-header-title {
+    font-size: 3rem;
+  }
+}
+
+.Data-header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.Data-stats-text {
+  font-size: 1rem;
+  color: #a0aec0; 
+  line-height: 1.5;
+  margin: 0;
+}
+
+.Data-highlight {
+  font-weight: bold;
+  color: #ffc107; 
+}
+
+.Data-main-description {
+  font-size: 1.1rem;
+  color: #cbd5e1; 
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+.Data-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .Data-steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.Data-step-card {
+  background-color: #1e293b; 
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Data-step-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #5c6c8c; 
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.Data-step-text {
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.6;
+  margin: 0;
+}

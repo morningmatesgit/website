@@ -1,0 +1,360 @@
+/* Overall container for the section */
+.Core-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a;
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.Core-header {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  z-index: 1;
+  position: relative;
+}
+
+.Core-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .Core-title {
+    font-size: 3rem;
+  }
+}
+
+.Core-description {
+  font-size: 1.1rem;
+  color: #a0aec0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+.Core-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  z-index: 1;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.Core-filter-dropdown {
+  position: relative;
+  width: 200px;
+}
+
+.Core-filter-label {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #0c0d1b;
+  color: #a0aec0;
+  font-size: 0.8rem;
+  padding: 0 5px;
+  z-index: 2;
+}
+
+.Core-dropdown-select {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.Core-dropdown-select:focus {
+  outline: none;
+  border-color: #ffc107;
+}
+
+
+.Core-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .Core-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .Core-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.Core-card {
+  background-color: #1e293b; 
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Core-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.Core-tag {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.Core-tag-new {
+  background-color: #8b5cf6; 
+  color: #fff;
+}
+
+.Core-tag-completed {
+  background-color: #334155; 
+  color: #cbd5e1;
+}
+
+.Core-card-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+
+.Core-card-image-blue {
+  background-color: #3b82f6;
+}
+
+.Core-card-image-green {
+  background-color: #10b981;
+}
+
+.Core-card-image-red {
+  background-color: #ef4444; 
+}
+
+.Core-card-image-purple {
+  background-color: #a855f7; 
+}
+
+.Core-card-image-orange {
+  background-color: #f97316; 
+}
+
+.Core-card-image-pink {
+  background-color: #ec4899; 
+}
+
+
+.Core-card-image svg {
+  width: 28px;
+  height: 28px;
+  color: #fff;
+}
+
+.Core-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.Core-card-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.Core-category {
+  font-size: 0.8rem;
+  background-color: #334155; 
+  color: #cbd5e1;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+}
+
+.Core-card-specialists {
+  margin-top: auto; 
+}
+
+.Core-specialists-label {
+  font-size: 0.75rem;
+  color: #a0aec0;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.Core-specialists-names {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+  margin: 0;
+}
+/* whychoose */
+
+.WhyTimsparkCore-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.WhyTimsparkCore-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(255, 193, 7, 0.1) 0%, transparent 60%);
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.WhyTimsparkCore-header {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  z-index: 1;
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .WhyTimsparkCore-header {
+    grid-template-columns: 1fr 1.2fr; 
+    align-items: center;
+  }
+}
+
+.WhyTimsparkCore-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .WhyTimsparkCore-title {
+    font-size: 3rem;
+  }
+}
+
+.WhyTimsparkCore-description {
+  font-size: 1.1rem;
+  color: #a0aec0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+.WhyTimsparkCore-card-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+
+.WhyTimsparkCore-card {
+  background-color: #1e293b; 
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .WhyTimsparkCore-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.WhyTimsparkCore-reason-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.WhyTimsparkCore-icon-box {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1); 
+  border-radius: 8px;
+}
+
+.WhyTimsparkCore-icon-box svg {
+  width: 24px;
+  height: 24px;
+  color: #ffc107; 
+}
+
+.WhyTimsparkCore-text-content {
+  flex-grow: 1;
+}
+
+.WhyTimsparkCore-reason-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.5rem;
+}
+
+.WhyTimsparkCore-reason-text {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}

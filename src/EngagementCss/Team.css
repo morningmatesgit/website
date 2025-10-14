@@ -1,0 +1,740 @@
+
+.StaffingHero-section-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0c0d1b; 
+  padding: 2rem 1rem 10rem; 
+  position: relative;
+  overflow: hidden;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+
+.StaffingHero-section-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(0, 150, 136, 0.3) 0%, transparent 70%); 
+  filter: blur(150px);
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+
+.StaffingHero-breadcrumb {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 3rem;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.StaffingHero-breadcrumb-item {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.StaffingHero-breadcrumb-item:hover {
+  color: #fff;
+}
+
+.StaffingHero-breadcrumb-separator {
+  color: #cbd5e1;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.StaffingHero-breadcrumb-active {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.StaffingHero-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+
+.StaffingHero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  max-width: 700px; /* Limit width for title */
+}
+
+@media (min-width: 768px) {
+  .StaffingHero-title {
+    font-size: 4.5rem;
+  }
+}
+
+
+.StaffingHero-clutch-review {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .StaffingHero-clutch-review {
+    position: absolute; 
+    top: 50%; 
+    right: 1rem; 
+    transform: translateY(-50%);
+    align-items: center;
+  }
+}
+
+.StaffingHero-review-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #a0aec0;
+  margin: 0;
+}
+
+.StaffingHero-stars {
+  color: #e53e3e; 
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+
+.StaffingHero-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 900px;
+}
+
+
+.StaffingHero-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+
+.StaffingHero-cta-button {
+  background-color: #ffc107;
+  color: #0c0d1b;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.StaffingHero-cta-button:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.StaffingHero-goodfirms-badge {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  max-width: 900px;
+  width: 100%;
+  position: absolute;
+  bottom: -50px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .StaffingHero-goodfirms-badge {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%); 
+  }
+}
+
+.StaffingHero-goodfirms-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.StaffingHero-goodfirms-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffc107; 
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.StaffingHero-goodfirms-text {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.StaffingHero-learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.StaffingHero-learn-more:hover {
+  transform: translateX(5px);
+}
+
+.StaffingHero-arrow {
+  margin-left: 0.25rem;
+}
+
+.StaffingHero-goodfirms-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #0c0d1b; 
+}
+
+.StaffingHero-goodfirms-logo svg {
+  color: #ffc107; 
+  margin-bottom: 0.5rem;
+}
+
+.StaffingHero-goodfirms-badge-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.StaffingHero-goodfirms-badge-subtext {
+  font-size: 0.9rem;
+  color: #a0aec0;
+  margin: 0;
+}
+
+.StaffingBenefits-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a;
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.StaffingBenefits-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 60%); 
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+
+.StaffingBenefits-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .StaffingBenefits-header {
+    grid-template-columns: 0.8fr 1.2fr; 
+    align-items: center;
+  }
+}
+
+.StaffingBenefits-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .StaffingBenefits-title {
+    font-size: 3rem;
+  }
+}
+
+.StaffingBenefits-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Grid layout for the cards */
+.StaffingBenefits-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .StaffingBenefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.StaffingBenefits-card {
+  background-color: #1e293b; 
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.StaffingBenefits-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.StaffingBenefits-icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1); /* Light yellow background */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.StaffingBenefits-icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: #ffc107; /* Yellow color for icons */
+}
+
+.StaffingBenefits-card-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.StaffingBenefits-card-text {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+/* //Staffhire */
+
+.TalentHire-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .TalentHire-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+/* Background gradient effect on the right */
+.TalentHire-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -20%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 60%);
+  filter: blur(150px);
+  transform: translateY(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Left content area */
+.TalentHire-left {
+  text-align: left;
+  max-width: 550px;
+  flex-shrink: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.TalentHire-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .TalentHire-title {
+    font-size: 3rem;
+  }
+}
+
+.TalentHire-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.TalentHire-list li {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  padding-left: 1.8rem;
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.TalentHire-list li::before {
+  content: '—'; /* Custom bullet point */
+  color: #ffc107;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1.8em;
+  position: absolute;
+  left: 0;
+}
+
+/* Right content area with grid */
+.TalentHire-right {
+  flex-grow: 1;
+  z-index: 1;
+  position: relative;
+}
+
+.TalentHire-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: stretch; /* Keep all cards same height */
+}
+
+@media (min-width: 768px) {
+  .TalentHire-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Individual card styling - unified color */
+.TalentHire-card,
+.TalentHire-card-highlight {
+  background-color: #1e293b; /* Same dark blue-gray for all cards */
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 150px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.TalentHire-card:hover,
+.TalentHire-card-highlight:hover {
+  transform: translateY(-5px);
+  background-color: #243449; 
+}
+
+/* Icon box */
+.TalentHire-icon-box {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.TalentHire-icon-box svg {
+  width: 24px;
+  height: 24px;
+  color: #ffc107;
+}
+
+
+.TalentHire-card-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.EngagementModels-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.EngagementModels-container::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.35) 0%, transparent 70%); /* Cyan glow */
+  width: 450px;
+  height: 450px;
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.EngagementModels-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.35) 0%, transparent 70%); /* Purple glow */
+  width: 550px;
+  height: 550px;
+  bottom: 10%;
+  right: 15%;
+  transform: translate(50%, 50%);
+}
+
+
+.EngagementModels-header {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  z-index: 1;
+  position: relative;
+  text-align: left;
+}
+
+@media (min-width: 1024px) {
+  .EngagementModels-header {
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+  }
+}
+
+.EngagementModels-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .EngagementModels-title {
+    font-size: 3rem;
+  }
+}
+
+.EngagementModels-description {
+  font-size: 1.1rem;
+  color: #a0aec0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+.EngagementModels-card-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+}
+
+/* Individual card styling */
+.EngagementModels-card {
+  background-color: #1e293b; /* Darker blue-gray */
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .EngagementModels-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* Left side of the card */
+.EngagementModels-card-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 45%;
+}
+
+.EngagementModels-icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1); /* Light yellow background */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.EngagementModels-icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: #ffc107; /* Yellow color for icons */
+}
+
+.EngagementModels-card-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.5rem;
+}
+
+.EngagementModels-card-subtext {
+  font-size: 1rem;
+  color: #a0aec0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Right side of the card */
+.EngagementModels-card-right {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 2rem;
+}
+
+.EngagementModels-how-it-works {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffc107;
+  margin: 0 0 0.5rem;
+}
+
+.EngagementModels-details {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+.EngagementModels-learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ffc107;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.EngagementModels-learn-more:hover {
+  transform: translateX(5px);
+}
+
+.EngagementModels-arrow {
+  margin-left: 0.25rem;
+}

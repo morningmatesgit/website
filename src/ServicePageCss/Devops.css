@@ -1,0 +1,691 @@
+
+.DevOps-hero-section-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 2rem 1rem 6rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+
+.DevOps-hero-section-container::before,
+.DevOps-hero-section-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.DevOps-hero-section-container::before {
+  width: 450px;
+  height: 450px;
+  top: 15%;
+  left: 20%;
+  background: radial-gradient(circle, rgba(56,189,248,0.35) 0%, transparent 70%); /* Cyan glow */
+  transform: translate(-50%, -50%);
+}
+
+.DevOps-hero-section-container::after {
+  width: 550px;
+  height: 550px;
+  bottom: 10%;
+  right: 20%;
+  background: radial-gradient(circle, rgba(139,92,246,0.35) 0%, transparent 70%); 
+  transform: translate(50%, 50%);
+}
+
+
+.DevOps-breadcrumb {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 3rem;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.DevOps-breadcrumb-item {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.DevOps-breadcrumb-item:hover {
+  color: #fff;
+}
+
+.DevOps-breadcrumb-separator {
+  color: #cbd5e1;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.DevOps-breadcrumb-active {
+  color: #fff;
+  font-weight: 600;
+}
+
+
+.DevOps-hero-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.DevOps-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .DevOps-hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+
+.DevOps-hero-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+}
+
+
+.DevOps-cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .DevOps-cta-buttons {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+
+.DevOps-cta-button {
+  background-color: #ffc107;
+  color: #0c0d1b;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.DevOps-cta-button:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
+
+.DevOps-secondary-button {
+  background-color: transparent;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+}
+
+.DevOps-secondary-button:hover {
+  background-color: #ffc107;
+  color: #0c0d1b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* DevopsExpertise */
+
+.DevOps-expertise-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; 
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.DevOps-expertise-container::before {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.3) 0%, transparent 70%); /* Purple gradient */
+  width: 400px;
+  height: 400px;
+  top: 10%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.DevOps-expertise-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: 0;
+  background: radial-gradient(circle, rgba(255, 193, 7, 0.3) 0%, transparent 70%); /* Yellow gradient */
+  width: 500px;
+  height: 500px;
+  bottom: 5%;
+  right: 10%;
+  transform: translate(50%, 50%);
+}
+
+/* Header section with title and description */
+.DevOps-expertise-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .DevOps-expertise-header {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
+
+.DevOps-header-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .DevOps-header-title {
+    font-size: 3rem;
+  }
+}
+
+.DevOps-header-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0;
+}
+
+/* Services grid layout */
+.DevOps-services-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .DevOps-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .DevOps-services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual service card styling */
+.DevOps-service-card {
+  background-color: #1e293b; 
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.DevOps-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.DevOps-icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1); 
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.DevOps-icon-box svg {
+  width: 28px;
+  height: 28px;
+  color: #ffc107; 
+}
+
+.DevOps-service-heading {
+  font-size: 1.3rem; 
+  font-weight: 700;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+/* DevopsHire */
+/* Overall container for the section */
+.DevOps-hire-reasons-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a;
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.DevOps-hire-reasons-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.2) 0%, transparent 70%);
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+
+.DevOps-reasons-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  position: relative;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .DevOps-reasons-title {
+    font-size: 3rem;
+  }
+}
+
+
+.DevOps-reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .DevOps-reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .DevOps-reasons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+.DevOps-reason-card {
+  background-color: #1e293b; 
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 120px; 
+}
+
+
+.DevOps-reason-card:hover {
+  background-color: #ffc107; 
+  border-color: #ffc107; 
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.DevOps-reason-card:hover .DevOps-reason-text {
+  color: #0c0d1b; 
+}
+
+.DevOps-reason-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff; 
+  margin: 0;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+
+/* Devopsindustries */
+/* Container for the entire section */
+.DevOps-industries-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; /* Unified dark background */
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background gradient effects updated */
+.DevOps-industries-container::before,
+.DevOps-industries-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.DevOps-industries-container::before {
+  width: 450px;
+  height: 450px;
+  top: 15%;
+  left: 15%;
+  background: radial-gradient(circle, rgba(56,189,248,0.35) 0%, transparent 70%); /* Cyan glow */
+  transform: translate(-50%, -50%);
+}
+
+.DevOps-industries-container::after {
+  width: 550px;
+  height: 550px;
+  bottom: 10%;
+  right: 15%;
+  background: radial-gradient(circle, rgba(139,92,246,0.35) 0%, transparent 70%); /* Purple glow */
+  transform: translate(50%, 50%);
+}
+
+/* Header section with title and description */
+.DevOps-industries-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .DevOps-industries-header {
+    grid-template-columns: 0.8fr 1.2fr; /* Adjust column width for title and description */
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.DevOps-header-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .DevOps-header-title {
+    font-size: 3rem;
+  }
+}
+
+.DevOps-header-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Industry grid layout */
+.DevOps-industry-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .DevOps-industry-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .DevOps-industry-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual industry item styling */
+.DevOps-industry-item {
+  background-color: #1e293b; /* Darker blue-gray */
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.DevOps-industry-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.DevOps-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(56,189,248,0.1); /* Light cyan glow background */
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.DevOps-icon-wrapper svg {
+  width: 28px;
+  height: 28px;
+  color: #38bdf8; /* Cyan color for icons */
+}
+
+.DevOps-industry-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+/* DevopswhyChoose */
+/* Container for the entire section */
+.DevOps-why-choose-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a; /* Dark background color */
+  padding: 6rem 1rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Background gradient effects */
+.DevOps-why-choose-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.3) 0%, transparent 70%); /* Purple gradient */
+  filter: blur(150px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Section title styling */
+.DevOps-why-choose-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  position: relative;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .DevOps-why-choose-title {
+    font-size: 3rem;
+  }
+}
+
+/* Why Choose grid layout */
+.DevOps-why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .DevOps-why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .DevOps-why-choose-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Individual card styling */
+.DevOps-why-choose-card {
+  background-color: #1e293b; /* Darker blue-gray */
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.DevOps-why-choose-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.DevOps-card-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 193, 7, 0.1); /* Light yellow background */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.DevOps-card-icon svg {
+  width: 28px;
+  height: 28px;
+  color: #ffc107; /* Yellow color for icons */
+}
+
+.DevOps-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.DevOps-card-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.DevOps-card-text {
+  font-size: 1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+}
