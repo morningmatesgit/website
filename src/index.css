@@ -1181,3 +1181,28 @@ h2 {
     text-decoration: underline;
   }
 }
+
+
+/* logo */
+.logo {
+  display: flex;
+  align-items:center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between; /* logo on left, links on right */
+  align-items: center;
+  padding: 10px 40px;
+  
+  
+}

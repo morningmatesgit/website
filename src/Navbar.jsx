@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import logo from "./assets/logo.png";
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +26,11 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="logo">Timspark</div>
+        <div className="logo">
+  <img src={logo} alt="MorningMates Logo" className="logo-img" />
+  <span>MorningMates</span>
+</div>
+
 
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
           <li>
