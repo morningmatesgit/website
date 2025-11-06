@@ -1,10 +1,23 @@
 import React from 'react';
+import Breadcrumb from '../Breadcrumb';
 
 
 const CorePortfolio = () => {
   return (
     <div className="Core-container">
+       <div className="core-breadcrumb-wrapper">
+        <Breadcrumb 
+          items={[
+            { label: "MorningMates", to: "/" },
+            { label: "EngagementModels", to: "/EngagementModels" },
+            { label: "Core Teams" }
+          ]}
+        />
+      </div>
+    
+    
       <div className="Core-header">
+       
         <h1 className="Core-title">Our portfolio of Core Teams</h1>
         <p className="Core-description">
           At Timspark, we go beyond traditional outsourcing. Our Core Teams are tailored to deliver unparalleled expertise and innovation in your specific industry.

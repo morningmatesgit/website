@@ -1,4 +1,6 @@
 import React from 'react';
+import Breadcrumb from '../Breadcrumb';
+
 
 
 const QAHeroSection = () => {
@@ -11,6 +13,16 @@ const QAHeroSection = () => {
         <span className="QAHero-breadcrumb-separator">›</span>
         <a href="#" className="QAHero-breadcrumb-item QAHero-breadcrumb-active">QA & testing</a>
       </div> */}
+      <>
+            <Breadcrumb
+             items={[
+                { label: "MorningMates", to: "/" },
+                { label: "Services", to: "/services" },
+                { label: "QA Services" } // no `to` → this becomes active
+              ]}
+        
+            />
+      </>
 
       <div className="QAHero-content">
         <h1 className="QAHero-title">

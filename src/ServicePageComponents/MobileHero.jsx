@@ -1,5 +1,6 @@
 import React from 'react';
 import "../ServicePageCss/Mobile.css";
+import Breadcrumb from '../Breadcrumb';
 
 const MobileHeroSection = () => {
   return (
@@ -11,6 +12,15 @@ const MobileHeroSection = () => {
         <span className="mobile-breadcrumb-separator">›</span>
         <a href="#" className="mobile-breadcrumb-item mobile-breadcrumb-active">Mobile App Development & Consulting Services</a>
       </div> */}
+            <Breadcrumb
+       items={[
+          { label: "MorningMates", to: "/" },
+          { label: "Services", to: "/services" },
+          { label: "Mobile App Development" } // no `to` → this becomes active
+        ]}
+  
+      />
+        
 
       <div className="mobile-hero-content">
         <h1 className="mobile-hero-title">

@@ -3,8 +3,8 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    question: "Why 'Timspark'? What stands behind your brand?",
-    answer: `Timspark is driven by a commitment to innovation, quality, and client success. Our brand stands for delivering cutting-edge software solutions tailored to your unique business needs, backed by a team of seasoned engineers and a passion for technology.`
+    question: "Why 'MorningMates'? What stands behind your brand?",
+    answer: `MorningMates is driven by a commitment to innovation, quality, and client success. Our brand stands for delivering cutting-edge software solutions tailored to your unique business needs, backed by a team of seasoned engineers and a passion for technology.`
   },
   {
     question: "What is a Core Team, and how is it organized?",

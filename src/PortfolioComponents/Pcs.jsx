@@ -1,8 +1,18 @@
 import React from 'react';
+import Breadcrumb from '../Breadcrumb';
 
 const PointCloudSegmentation = () => {
     return (
         <div className="pcs-container">
+            <div className="salesforce-breadcrumb-wrapper">
+                    <Breadcrumb
+                      items={[
+                        { label: "MorningMates", to: "/" },
+                        { label: "Portfolio", to: "/portfolio" },
+                        { label: "Point Cloud Segmentation" }
+                      ]}
+                    />
+                  </div>
             
             <div className="pcs-content-wrapper">
                 <div className="pcs-content-card">

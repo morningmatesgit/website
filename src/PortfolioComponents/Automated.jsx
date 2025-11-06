@@ -1,9 +1,18 @@
 import React from 'react';
-
+import Breadcrumb from '../Breadcrumb';
 
 const AutomatedRisk = () => {
   return (
     <div className="AutomatedRisk-container">
+      <div className="salesforce-breadcrumb-wrapper">
+              <Breadcrumb
+                items={[
+                  { label: "MorningMates", to: "/" },
+                  { label: "Portfolio", to: "/portfolio" },
+                  { label: "Direct Risk Material" }
+                ]}
+              />
+            </div>
       <div className="AutomatedRisk-content-card">
         <h1 className="AutomatedRisk-title">
           Direct Material Risk Assessment: <br />Snowflake-Based Data Solution

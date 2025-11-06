@@ -2,9 +2,9 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const contactInfo = [
-  { icon: "📍", title: "Address", detail: "123 Business Street, Chennai, India" },
+  { icon: "📍", title: "Address", detail: "132 ,Location 8 Challaghatta Domlur Bangalore, Karnataka, India, 560071." },
   { icon: "📞", title: "Phone", detail: "+91 98765 43210" },
-  { icon: "✉️", title: "Email", detail: "info@timspark.com" },
+  { icon: "✉️", title: "Email", detail: "morningmates.in@gmail.com" },
 ];
 
 export default function Contact() {

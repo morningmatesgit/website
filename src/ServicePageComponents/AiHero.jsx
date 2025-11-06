@@ -1,5 +1,6 @@
 import React from 'react';
 import "../ServicePageCss/Ai.css";
+import Breadcrumb from '../Breadcrumb';
 
 const AiHeroSection = () => {
   return (
@@ -11,6 +12,14 @@ const AiHeroSection = () => {
         <span className="ai-breadcrumb-separator">›</span>
         <a href="#" className="ai-breadcrumb-item ai-breadcrumb-active">Artificial intelligence software development</a>
       </div> */}
+      <Breadcrumb
+       items={[
+          { label: "MorningMates", to: "/" },
+          { label: "Services", to: "/services" },
+          { label: "Ai Software Development" } // no `to` → this becomes active
+        ]}
+  
+      />
 
       <div className="ai-hero-content">
         <h1 className="ai-hero-title">

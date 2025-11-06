@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "./assets/logo.png";
 
-
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -26,18 +25,20 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <div className="logo">
-  <img src={logo} alt="MorningMates Logo" className="logo-img" />
-  <span>MorningMates</span>
-</div>
 
+        {/* ✅ LOGO CLICK → GO HOME */}
+        <Link to="/" className="logo" onClick={handleLinkClick}>
+          <img src={logo} alt="MorningMates Logo" className="logo-img" />
+          <span>MorningMates</span>
+        </Link>
 
+        {/* NAV LINKS */}
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
           <li>
             <Link to="/" onClick={handleLinkClick}>Home</Link>
           </li>
 
-          {/* SERVICES */}
+          {/* SERVICES DROPDOWN */}
           <li
             className="dropdown-parent"
             onMouseEnter={() => !isMobile && setOpenDropdown("services")}
@@ -62,18 +63,18 @@ function Navbar() {
                     <Link to="/custom-software" onClick={handleLinkClick}>Software development</Link>
                     <Link to="/web-software" onClick={handleLinkClick}>Web development</Link>
                     <Link to="/mobile-software" onClick={handleLinkClick}>Mobile app development</Link>
-                    <Link to="/iot-software" onClick={handleLinkClick}>IoT software development</Link>
+                    <Link to="/cyber-software" onClick={handleLinkClick}>Cybersecurity Services</Link>
                     <Link to="/ai-software" onClick={handleLinkClick}>AI software development</Link>
                     <Link to="/data-software" onClick={handleLinkClick}>Data management & analysis</Link>
                     <Link to="/qa-software" onClick={handleLinkClick}>QA and testing</Link>
-                    <Link to="/devops-software" onClick={handleLinkClick}>DevOps management</Link>
+                    <Link to="/cloud-software" onClick={handleLinkClick}>DevOps management</Link>
                   </div>
                 </div>
               </div>
             )}
           </li>
 
-          
+          {/* PORTFOLIO */}
           <li
             className="dropdown-parent"
             onMouseEnter={() => !isMobile && setOpenDropdown("portfolio")}
@@ -143,10 +144,11 @@ function Navbar() {
           </li>
         </ul>
 
-       
+        {/* MOBILE MENU BUTTON */}
         <div className="hamburger" onClick={() => { setIsOpen((s) => !s); setOpenDropdown(null); }}>
           <span></span><span></span><span></span>
         </div>
+
       </div>
     </nav>
   );

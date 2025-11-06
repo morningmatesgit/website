@@ -45,25 +45,38 @@ const Footer = () => {
               <Link to="#" className="social-icon">X</Link>
               <Link to="#" className="social-icon">O</Link>
             </div>
-            <p><a href="mailto:email@timspark.com">Email us</a></p>
-            <button className="footer-cta-btn">Book a call</button>
-          </div>
+          
 
+<p>
+  <a href="mailto:morningmates.in@gmail.com">Email us</a>
+</p>
+
+<a
+  href="https://calendly.com/morningmates/30min"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="footer-cta-btn">Book a call</button>
+</a>
+
+
+          </div>
+            
           <div className="footer-col address-col">
             <h4>HEADQUARTERS</h4>
-            <p>United Kingdom</p>
-            <p>6 St Davids Square,</p>
-            <p>E14 3WA, London</p>
-            <p><a href="tel:+442038552027">+44 20 3855 2027</a></p>
-            <p><a href="mailto:sales@timspark.com">Sales inquiries</a></p>
+            <p>132 Location 8 Challaghatta Domlur </p>
+            <p>Bangalore Karnataka,</p>
+            <p> India 560071.</p>
+            {/* <p><a href="tel:+442038552027">+44 20 3855 2027</a></p>
+            <p><a href="mailto:sales@timspark.com">Sales inquiries</a></p> */}
           </div>
 
-          <div className="footer-col address-col">
+          {/* <div className="footer-col address-col">
             <h4>BUSINESS DEVELOPMENT</h4>
             <p>United States of America</p>
             <p>7901 4th St N Ste 300,</p>
             <p>St. Petersburg FL 33702</p>
-          </div>
+          </div> */}
 
           <div className="footer-col clutch-review">
             <h4>REVIEWED ON</h4>
@@ -74,7 +87,7 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>Copyright © 2025 MorningMates</p>
-          <p><Link to="/privacy-policy">Privacy Policy</Link></p>
+          {/* <p><Link to="/privacy-policy">Privacy Policy</Link></p> */}
         </div>
       </div>
     </footer>

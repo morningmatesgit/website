@@ -1,5 +1,6 @@
 import React from 'react';
 import "../ServicePageCss/Data.css";
+import Breadcrumb from '../Breadcrumb';
 
 const DataHeroSection = () => {
   return (
@@ -11,6 +12,14 @@ const DataHeroSection = () => {
     //     <span className="Data-breadcrumb-separator">›</span>
     //     <a href="#" className="Data-breadcrumb-item Data-breadcrumb-active">Data management services</a>
     //   </div> */}
+          <Breadcrumb
+       items={[
+          { label: "MorningMates", to: "/" },
+          { label: "Services", to: "/services" },
+          { label: "Data Management Services" } // no `to` → this becomes active
+        ]}
+  
+      />
 
       <div className="Data-hero-content">
         <h1 className="Data-hero-title">

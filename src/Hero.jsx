@@ -1,5 +1,3 @@
-
-
 function Hero() {
   return (
     <section className="hero">
@@ -10,13 +8,21 @@ function Hero() {
         <p>
           Empowering businesses with cutting-edge technology and modern design.
         </p>
+
         <div className="hero-buttons">
           <button className="btn-primary">Get Started</button>
-          <button className="btn-secondary">Schedule a Call</button>
+
+          <a
+            href="https://calendly.com/morningmates/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary"
+          >
+            Schedule a Call
+          </a>
         </div>
       </div>
     </section>
-
   );
 }
 

@@ -82,6 +82,40 @@ function App() {
           } 
         />
 
+
+<Route 
+          path="/services" 
+          element={
+            <>
+             
+              <Services/>
+              
+            </>
+          } 
+        />
+<Route 
+          path="/portfolio" 
+          element={
+            <>
+             
+              <Portfolio/>
+              
+            </>
+          } 
+        />
+
+<Route 
+          path="/EngagementModels" 
+          element={
+            <>
+             
+              <EngagementModels/>
+              
+            </>
+          } 
+        />
+
+
         <Route 
           path="/mobile-software" 
           element={

@@ -1,4 +1,5 @@
 /* Hero Section */
+/* Hero Section */
 .web-hero-section {
   position: relative;
   height: 100vh;
@@ -12,6 +13,41 @@
   font-family: Arial, sans-serif;
 }
 
+/* ✅ Breadcrumb Wrapper (Now perfect position) */
+.web-breadcrumb-wrapper {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  z-index: 20;
+}
+
+/* ✅ Breadcrumb Styling */
+.breadcrumb-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breadcrumb-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.breadcrumb-link:hover {
+  color: #ffffff;
+}
+
+.breadcrumb-separator {
+  color: #64748b;
+}
+
+.breadcrumb-active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
 /* Background Gradient Effect */
 .background-gradient {
   position: absolute;
@@ -21,7 +57,7 @@
   height: 150%;
   background: radial-gradient(
     circle,
-    rgba(15, 23, 42, 0.4) 0%,
+    rgba(15, 23, 42, 0.5) 0%,
     rgba(15, 23, 42, 0.2) 30%,
     transparent 70%
   );
@@ -42,7 +78,6 @@
   font-size: 3.5rem;
   margin-bottom: 20px;
   font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
@@ -52,7 +87,7 @@
   line-height: 1.5;
 }
 
-/* Call-to-action Button */
+/* CTA Button */
 .cta-button {
   background-color: #ffc107;
   color: #0c0d1b;
@@ -63,7 +98,6 @@
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: 1px;
   transition: background-color 0.3s ease;
 }
 
@@ -71,16 +105,13 @@
   background-color: #e0a800;
 }
 
-/* Responsive adjustments */
+/* Mobile */
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
+  .hero-content h1 { font-size: 2.5rem; }
+  .hero-content p { font-size: 1rem; }
+  .web-breadcrumb-wrapper { top: 20px; left: 20px; }
 }
+
 
 /* Custom Software Services Section */
 .software-services-section {

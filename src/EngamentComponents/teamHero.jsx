@@ -1,16 +1,26 @@
 import React from 'react';
-
+import Breadcrumb from '../Breadcrumb';
 
 const StaffingHero = () => {
   return (
     <div className="StaffingHero-section-container">
-      <div className="StaffingHero-breadcrumb">
+      {/* <div className="StaffingHero-breadcrumb">
         <a href="#" className="StaffingHero-breadcrumb-item">Timspark</a>
         <span className="StaffingHero-breadcrumb-separator">›</span>
         <a href="#" className="StaffingHero-breadcrumb-item">Services</a>
         <span className="StaffingHero-breadcrumb-separator">›</span>
         <a href="#" className="StaffingHero-breadcrumb-item StaffingHero-breadcrumb-active">IT Staff Augmentation Services</a>
+      </div> */}
+       <div className="StaffingHero-breadcrumb">
+        <Breadcrumb 
+          items={[
+            { label: "MorningMates", to: "/" },
+            { label: "EngagementModels", to: "/EngagementModels" },
+            { label: "Staff Augementation" }
+          ]}
+        />
       </div>
+      
 
       <div className="StaffingHero-content">
         <h1 className="StaffingHero-title">

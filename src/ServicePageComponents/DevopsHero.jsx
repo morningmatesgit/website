@@ -1,5 +1,6 @@
 import React from 'react';
 import "../ServicePageCss/Devops.css";
+  import Breadcrumb from '../Breadcrumb';
 
 const DevOpsHeroSection = () => {
   return (
@@ -11,6 +12,14 @@ const DevOpsHeroSection = () => {
     //     <span className="DevOps-breadcrumb-separator">›</span>
     //     <a href="#" className="DevOps-breadcrumb-item DevOps-breadcrumb-active">DevOps management & consulting</a>
     //   </div> */}
+          <Breadcrumb
+       items={[
+          { label: "MorningMates", to: "/" },
+          { label: "Services", to: "/services" },
+          { label: "Devops Consulting Services" } // no `to` → this becomes active
+        ]}
+  
+      />
 
       <div className="DevOps-hero-content">
         <h1 className="DevOps-hero-title">

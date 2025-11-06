@@ -286,3 +286,51 @@
             }
           }
         
+
+          /* ✅ Breadcrumb Position */
+.salesforce-breadcrumb-wrapper {
+  position: absolute;
+ margin-top: 100px;
+  left: 60px;
+  z-index: 20;
+}
+
+/* ✅ Breadcrumb Style */
+/* Breadcrumb Wrapper Positioning */
+.salesforce-breadcrumb-wrapper {
+  margin-top: -500px;
+  margin-left: 0px; /* Adjust left position */
+  margin-bottom: 20px;
+}
+
+/* Breadcrumb Base Style */
+.salesforce-breadcrumb-wrapper .breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* Breadcrumb Links */
+.salesforce-breadcrumb-wrapper .breadcrumb a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.salesforce-breadcrumb-wrapper .breadcrumb a:hover {
+  color: #ffc107; /* Hover highlight */
+}
+
+/* Separator */
+.salesforce-breadcrumb-wrapper .breadcrumb-separator {
+  color: #64748b;
+}
+
+/* Active Page Text */
+.salesforce-breadcrumb-wrapper .breadcrumb-active {
+  color: #ffffff;
+  font-weight: 600;
+}

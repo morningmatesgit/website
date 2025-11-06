@@ -1,9 +1,18 @@
 import React from 'react';
+import Breadcrumb from '../Breadcrumb';
 
 const MobileGameHero = () => {
   return (
     <>
       <div className="carbon-game-container">
+             <Breadcrumb
+       items={[
+          { label: "MorningMates", to: "/" },
+          { label: "Portfolio", to: "/Portfolio" },
+          { label: "Mobile Game Development" } // no `to` → this becomes active
+        ]}
+  
+      />
         <div className="carbon-game-content">
           <div className="carbon-game-header">
             <h4 className="carbon-game-eyebrow">EFFORTLESS MOBILE GAME DEVELOPMENT</h4>

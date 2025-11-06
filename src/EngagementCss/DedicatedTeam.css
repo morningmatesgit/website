@@ -269,3 +269,9 @@
   line-height: 1.6;
   margin: 0;
 }
+
+.di-breadcrumb-wrapper {
+  margin-top: -60px;
+  margin-left: -1000px; /* Adjust left position */
+  margin-bottom: 20px;
+}

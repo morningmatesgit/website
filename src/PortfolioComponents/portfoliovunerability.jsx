@@ -1,10 +1,20 @@
 import React from 'react';
+import Breadcrumb from '../Breadcrumb';
 
 
 const PortfolioVulnerability = () => {
   return (
     <div className="PortfolioVulnerability-container">
+     
       <div className="PortfolioVulnerability-content-wrapper">
+        <Breadcrumb
+       items={[
+          { label: "MorningMates", to: "/" },
+          { label: "Portfolio", to: "/Portfolio" },
+          { label: "Vulnerability Management Solution" } 
+        ]}
+  
+      />
         <h1 className="PortfolioVulnerability-title">Enterprise Vulnerability Management Solution</h1>
         <p className="PortfolioVulnerability-description">
           Our team helped the client develop a cybersecurity platform designed to find and showcase detailed analytics on exposures and vulnerabilities. The system provides clients with fast, accurate insights into their security posture, enabling proactive risk management and improved cyber resilience.

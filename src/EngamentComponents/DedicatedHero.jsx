@@ -1,17 +1,21 @@
 import React from 'react';
+import Breadcrumb from '../Breadcrumb';
 
 
 const DedicatedTeamsHero = () => {
   return (
     <div className="DedicatedTeamsHero-section-container">
-      {/* <div className="DedicatedTeamsHero-breadcrumb">
-        <a href="#" className="DedicatedTeamsHero-breadcrumb-item">Timspark</a>
-        <span className="DedicatedTeamsHero-breadcrumb-separator">›</span>
-        <a href="#" className="DedicatedTeamsHero-breadcrumb-item">Services</a>
-        <span className="DedicatedTeamsHero-breadcrumb-separator">›</span>
-        <a href="#" className="DedicatedTeamsHero-breadcrumb-item DedicatedTeamsHero-breadcrumb-active">Dedicated development teams</a>
-      </div> */}
-
+      
+       <div className="di-breadcrumb-wrapper">
+              <Breadcrumb 
+                items={[
+                  { label: "MorningMates", to: "/" },
+                  { label: "EngagementModels", to: "/EngagementModels" },
+                  { label: "Dedicated Team" }
+                ]}
+              />
+            </div>
+      
       <div className="DedicatedTeamsHero-content">
         <h1 className="DedicatedTeamsHero-title">Dedicated development teams</h1>
         <p className="DedicatedTeamsHero-description">

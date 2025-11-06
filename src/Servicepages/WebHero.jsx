@@ -1,13 +1,30 @@
-import React from 'react';
-import './Web.css';
+import React from "react";
+import "./Web.css";
+import Breadcrumb from "../Breadcrumb";
 
 const WebHero = () => {
   return (
     <div className="web-hero-section">
+
+      {/* ✅ Breadcrumb Positioned Here */}
+      <div className="web-breadcrumb-wrapper">
+        <Breadcrumb
+          items={[
+            { label: "MorningMates", to: "/" },
+            { label: "Services", to: "/services" },
+            { label: "Web Development Services" }
+          ]}
+        />
+      </div>
+
       <div className="background-gradient"></div>
+
       <div className="hero-content">
         <h1>Web development services</h1>
-        <p>We create web solutions that convert, engage, and grow your business. Let's bring your vision to life.</p>
+        <p>
+          We create web solutions that convert, engage, and grow your business.
+          Let's bring your vision to life.
+        </p>
         <button className="cta-button">GET IN TOUCH</button>
       </div>
     </div>
@@ -15,3 +32,5 @@ const WebHero = () => {
 };
 
 export default WebHero;
+
+
