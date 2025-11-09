@@ -2,50 +2,175 @@
 .PortfolioVulnerability-container {
   font-family: Arial, sans-serif;
   color: #fff;
-  background-color: #0f172a; 
-  padding: 6rem 1rem;
+  background-color: #0f172a;
+  padding: 2rem 1rem 10rem;
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  text-align: left;
 }
 
-
-.PortfolioVulnerability-container::before,
-.PortfolioVulnerability-container::after {
+/* ✅ Match glow effect style */
+.PortfolioVulnerability-container::before {
   content: '';
   position: absolute;
-  filter: blur(100px);
-  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 1000px;
+  background: radial-gradient(circle, rgba(0, 150, 136, 0.3) 0%, transparent 70%);
+  filter: blur(150px);
   z-index: 0;
-}
-
-.PortfolioVulnerability-container::before {
-  top: 0%;
-  left: 0%;
-  width: 500px;
-  height: 500px;
-  /* background: radial-gradient(circle, rgba(138, 43, 226, 0.3) 0%, transparent 60%); Purple glow */
-  transform: translate(-30%, -30%);
-}
-
-.PortfolioVulnerability-container::after {
-  bottom: 0%;
-  right: 0%;
-  width: 500px;
-  height: 500px;
-  /* background: radial-gradient(circle, rgba(255, 193, 7, 0.2) 0%, transparent 60%); Yellow glow */
-  transform: translate(30%, 30%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 
-.PortfolioVulnerability-content-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
+.PortfolioVulnerability-breadcrumb {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   text-align: left;
   z-index: 1;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: -20px;
+  box-sizing: border-box;
+}
+
+.PortfolioVulnerability-breadcrumb a,
+.PortfolioVulnerability-breadcrumb span {
+  font-size: clamp(10px, 2vw, 13px);
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.PortfolioVulnerability-breadcrumb a:hover {
+  color: #fff;
+}
+
+/* ✅ Content styling */
+.PortfolioVulnerability-content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.PortfolioVulnerability-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  max-width: 700px;
+}
+
+@media (min-width: 768px) {
+  .PortfolioVulnerability-title {
+    font-size: 4.5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .PortfolioVulnerability-container {
+    padding: 4rem 1rem;
+  }
+
+  .PortfolioVulnerability-breadcrumb {
+    padding-left: 20px;
+  }
+
+  .PortfolioVulnerability-content-wrapper {
+    padding: 0 1rem;
+  }
+}
+
+
+/* --- Main Content Typography and Layout --- */
+
+.PortfolioVulnerability-title {
+ font-size: clamp(2rem, 4vw, 3rem);
+ margin-bottom: 1rem;
+ font-weight: 700;
+}
+
+.PortfolioVulnerability-description {
+ font-size: clamp(1rem, 1.5vw, 1.15rem);
+ line-height: 1.6;
+ margin-bottom: 2rem;
+ max-width: 800px;
+ color: #cbd5e1;
+}
+
+.PortfolioVulnerability-disclosure {
+ font-size: 0.9rem;
+ color: #64748b;
+ margin-bottom: 2rem;
+ font-style: italic;
+}
+
+/* --- Detail Grids --- */
+
+.PortfolioVulnerability-details-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 2rem 3rem;
+ margin-bottom: 2.5rem;
+ padding-top: 1rem;
+ border-top: 1px solid #1e293b;
+}
+
+.PortfolioVulnerability-details-tech-services {
+ border-top: none;
+ border-bottom: 1px solid #1e293b;
+ padding-bottom: 2rem;
+}
+
+
+
+
+.PortfolioVulnerability-detail-label {
+font-size: 0.8rem;
+ color: #94a3b8;
+ margin-bottom: 0.3rem;
+ letter-spacing: 1px;
+ font-weight: 600;
+}
+
+.PortfolioVulnerability-detail-value {
+ font-size: 1rem;
+color: #fff;
+ font-weight: 500;
+ line-height: 1.5;
+}
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+ .PortfolioVulnerability-container {
+padding: 4rem 1rem;
+ }
+
+ .PortfolioVulnerability-details-grid {
+grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+ gap: 1.5rem 1rem;
+ }
+}
+
+@media (max-width: 480px) {
+ .PortfolioVulnerability-details-grid {
+  grid-template-columns: 1fr; /* Stacked columns on mobile */
+ }
 }
 
 /* Main title */
@@ -71,7 +196,7 @@
   max-width: 800px;
 }
 
-
+/* NDA disclosure text */
 .PortfolioVulnerability-disclosure {
   font-size: 0.9rem;
   color: #a0aec0;
@@ -79,7 +204,7 @@
   font-style: italic;
 }
 
-
+/* Details grid */
 .PortfolioVulnerability-details-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -118,27 +243,28 @@
   margin: 0;
 }
 
-
+/* Shield icon (optional visual) */
 .PortfolioVulnerability-shield-icon {
   position: absolute;
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.08); /* Very faint white */
+  color: rgba(255, 255, 255, 0.08);
   z-index: 0;
   pointer-events: none;
 }
 
 .PortfolioVulnerability-shield-icon svg {
-  width: 250px; /* Larger size */
+  width: 250px;
   height: 250px;
 }
 
 @media (max-width: 1024px) {
   .PortfolioVulnerability-shield-icon {
-    display: none; /
+    display: none;
   }
 }
+
 /* #####vunerability */
 /* Overall container for the section */
 .Vulnerability-container {
@@ -394,3 +520,5 @@
   line-height: 1.6;
   margin: 0;
 }
+
+

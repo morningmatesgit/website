@@ -5,6 +5,7 @@ import "../EngagementCss/Team.css";
 import StaffingBenefits from "../EngamentComponents/StaffingBenifits";
 import StaffTalentHire from "../EngamentComponents/Stafftalent";
 import StaffEngagementModels from "../EngamentComponents/StaffEngagement";
+import TeamFaq from "../EngamentComponents/TeamFaq";
 function TeamPage() {
   return (
     <>
@@ -12,6 +13,7 @@ function TeamPage() {
   <StaffingBenefits/>
   <StaffTalentHire/>
   <StaffEngagementModels/>
+  <TeamFaq/>
     <Contact/>
       <Footer/>
       

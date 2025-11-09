@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 
 const contactInfo = [
   { icon: "📍", title: "Address", detail: "132 ,Location 8 Challaghatta Domlur Bangalore, Karnataka, India, 560071." },
-  { icon: "📞", title: "Phone", detail: "+91 98765 43210" },
+  { icon: "📞", title: "Phone", detail: "+91 9688852551" },
   { icon: "✉️", title: "Email", detail: "morningmates.in@gmail.com" },
 ];
 

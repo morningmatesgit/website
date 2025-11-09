@@ -1,5 +1,6 @@
 import Contact from "../Contact";
 import Footer from "../Footer";
+import CloudFaq from "../ServicePageComponents/CloudFaq";
 import DevOpsExpertise from "../ServicePageComponents/DevopsExpertize";
 import DevOpsHeroSection from "../ServicePageComponents/DevopsHero";
 import DevOpsHireReasons from "../ServicePageComponents/DevopsHire";
@@ -14,6 +15,7 @@ function CloudServicePage() {
       <DevOpsHireReasons/>
       <DevOpsIndustries/>
       <DevOpsWhyChoose/>
+      <CloudFaq/>
       <Contact/>
       <Footer/>
       

@@ -1,6 +1,7 @@
 import Contact from "../Contact";
 import Footer from "../Footer";
 import MobileExperience from "../ServicePageComponents/MobileExperience";
+import MobileFaq from "../ServicePageComponents/MobileFaq";
 import MobileHeroSection from "../ServicePageComponents/MobileHero";
 import MobileServices from "../ServicePageComponents/MobileService";
 import MobileStack from "../ServicePageComponents/MobileStack";
@@ -15,6 +16,7 @@ function MobileServicePage() {
       <MobileServices/>
       <MobileStack/>
       <MobileWhyChooseUs />
+      <MobileFaq/>
       <Contact/>
       <Footer/>
       

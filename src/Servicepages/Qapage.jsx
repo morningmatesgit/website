@@ -1,5 +1,6 @@
 import Contact from "../Contact";
 import Footer from "../Footer";
+import QaFaq from "../ServicePageComponents/Qafaq";
 import QAFlexibleModels from "../ServicePageComponents/QaFlexbile";
 import QAHeroSection from "../ServicePageComponents/QaHero";
 import QAProcess from "../ServicePageComponents/QaProcess";
@@ -18,6 +19,7 @@ function QaServicePage() {
       <QAProcess/>
       <QATools/>
       <WhyChooseQA/>
+      <QaFaq/>
       <Contact/>
       <Footer/>
       

@@ -31,6 +31,7 @@ import PortfolioAiPage from "./PortfolioPages/PortfolioAi"
 import PortfolioCarbonPage from "./PortfolioPages/PortfolioCarbon"
 import PortfolioSalesforcePage from "./PortfolioPages/PortfolioSalesforce"
 import PortfolioMobileGamePage from "./PortfolioPages/PortfolioMobileGame"
+import WebFaq from "./WebFaq"
 
 function App() {
   return (
@@ -76,6 +77,7 @@ function App() {
               <IndustryExpertise />
               <WebServices />
               <WebDevProcess />
+              <WebFaq/>
               <Contact />
               <Footer />
             </>

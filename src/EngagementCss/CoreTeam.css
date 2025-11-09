@@ -361,8 +361,24 @@
 
 
 
+
+
 .core-breadcrumb-wrapper {
   margin-top: -60px;
-  margin-left: 50px; /* Adjust left position */
   margin-bottom: 20px;
+
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+
+  /* Remove the negative margin-left */
+  margin-left: 0px;
+  padding-left: 60px; 
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.core-breadcrumb-wrapper a,
+.core-breadcrumb-wrapper span {
+  font-size: clamp(10px, 2vw, 13px);
 }

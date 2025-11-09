@@ -739,8 +739,25 @@
   margin-left: 0.25rem;
 }
 
-.c-breadcrumb-wrapper {
-  margin-top: -60px;
-  margin-left: 0px; /* Adjust left position */
+
+
+.StaffingHero-breadcrumb {
+  margin-top: 10px;
   margin-bottom: 20px;
+
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+
+  /* Remove the negative margin-left */
+  margin-right: 60px;
+  padding-left: 30px; 
+  width: 100%;
+  box-sizing: border-box;
 }
+
+.StaffingHero-breadcrumb a,
+.StaffingHero-breadcrumb span {
+  font-size: clamp(10px, 2vw, 13px);
+}
+

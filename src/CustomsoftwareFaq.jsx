@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const customSoftwareFaqData = [
+const CustomSoftwareFaqData = [
   {
     question: "What is custom software development?",
     answer: `It involves designing, developing, and implementing software from scratch or by modifying existing systems. This approach allows businesses to address unique challenges, optimize processes, and achieve their objectives more effectively than off-the-shelf solutions. Custom software is highly customizable, scalable, and aligned closely with organizational requirements, providing a competitive advantage in today's dynamic market.`
@@ -58,7 +58,7 @@ const CustomSoftwareFaq = () => {
       </h2>
 
       <div className="faq-grid">
-        {customSoftwareFaqData.map((faq, index) => (
+        {CustomSoftwareFaqData.map((faq, index) => (
           <div
             key={index}
             className={`faq-item ${activeIndex === index ? "active" : ""}`}
