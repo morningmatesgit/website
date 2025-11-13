@@ -4,15 +4,10 @@ import Breadcrumb from '../Breadcrumb';
 
 const AiHeroSection = () => {
   return (
-    <div className="ai-hero-section-container">
-      {/* <div className="ai-breadcrumb">
-        <a href="#" className="ai-breadcrumb-item">Timspark</a>
-        <span className="ai-breadcrumb-separator">›</span>
-        <a href="#" className="ai-breadcrumb-item">Services</a>
-        <span className="ai-breadcrumb-separator">›</span>
-        <a href="#" className="ai-breadcrumb-item ai-breadcrumb-active">Artificial intelligence software development</a>
-      </div> */}
-      <Breadcrumb
+
+    <>
+    <div className="breadcrumb">
+    <Breadcrumb
        items={[
           { label: "MorningMates", to: "/" },
           { label: "Services", to: "/services" },
@@ -20,6 +15,10 @@ const AiHeroSection = () => {
         ]}
   
       />
+      </div>
+    <div className="ai-hero-section-container">
+
+      
 
       <div className="ai-hero-content">
         <h1 className="ai-hero-title">
@@ -43,6 +42,7 @@ const AiHeroSection = () => {
         <button className="ai-cta-button">SEE OUR OFFERING</button>
       </div>
     </div>
+    </>
   );
 };
 

@@ -44,40 +44,6 @@
 }
 
 
-.ai-breadcrumb {
-  width: 100%;
-  max-width: 1200px;
-  margin-bottom: 3rem;
-  text-align: left;
-  z-index: 1;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  box-sizing: border-box;
-}
-
-.ai-breadcrumb-item {
-  color: #cbd5e1;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
-}
-
-.ai-breadcrumb-item:hover {
-  color: #fff;
-}
-
-.ai-breadcrumb-separator {
-  color: #cbd5e1;
-  margin: 0 0.5rem;
-  font-size: 0.9rem;
-}
-
-.ai-breadcrumb-active {
-  color: #fff;
-  font-weight: 600;
-}
 
 /* Hero Content Wrapper */
 .ai-hero-content {

@@ -4,22 +4,20 @@ import Breadcrumb from '../Breadcrumb';
 
 const MobileHeroSection = () => {
   return (
-    <div className="mobile-hero-section-container">
-      {/* <div className="mobile-breadcrumb">
-        <a href="#" className="mobile-breadcrumb-item">Timspark</a>
-        <span className="mobile-breadcrumb-separator">›</span>
-        <a href="#" className="mobile-breadcrumb-item">Services</a>
-        <span className="mobile-breadcrumb-separator">›</span>
-        <a href="#" className="mobile-breadcrumb-item mobile-breadcrumb-active">Mobile App Development & Consulting Services</a>
-      </div> */}
-            <Breadcrumb
+<>
+    <div className='breadcrumb-wrapper'>
+         <Breadcrumb
        items={[
           { label: "MorningMates", to: "/" },
           { label: "Services", to: "/services" },
-          { label: "Mobile App Development" } // no `to` → this becomes active
+          { label: "Mobile App Development" } 
         ]}
   
       />
+    </div>
+    <div className="mobile-hero-section-container">
+      
+         
         
 
       <div className="mobile-hero-content">
@@ -46,6 +44,7 @@ const MobileHeroSection = () => {
         <button className="mobile-cta-button">SEE OUR OFFERING</button>
       </div>
     </div>
+    </>
   );
 };
 

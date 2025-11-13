@@ -4,10 +4,8 @@ import Breadcrumb from "../Breadcrumb";
 
 const WebHero = () => {
   return (
-    <div className="web-hero-section">
-
-      {/* ✅ Breadcrumb Positioned Here */}
-      <div className="web-breadcrumb-wrapper">
+    <>
+     <div className="breadcrumb-wrapper">
         <Breadcrumb
           items={[
             { label: "MorningMates", to: "/" },
@@ -16,6 +14,10 @@ const WebHero = () => {
           ]}
         />
       </div>
+    <div className="web-hero-section">
+
+      
+     
 
       <div className="background-gradient"></div>
 
@@ -28,6 +30,7 @@ const WebHero = () => {
         <button className="cta-button">GET IN TOUCH</button>
       </div>
     </div>
+    </>
   );
 };
 

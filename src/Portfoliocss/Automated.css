@@ -1,37 +1,64 @@
-
-.AutomatedRisk-container {
+/* === MAIN CONTAINER (same layout as AI section) === */
+.automatedrisk-hero-section-container {
   font-family: Arial, sans-serif;
   color: #fff;
-  background-color: #0f172a; 
-  padding: 6rem 1rem;
-  min-height: 500px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #0f172a;
+  padding: 2rem 1rem 6rem;
   position: relative;
   overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
 }
 
+/* === Background Glow (AI style) === */
+.automatedrisk-hero-section-container::before,
+.automatedrisk-hero-section-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: 0;
+}
 
-.AutomatedRisk-content-card {
+.automatedrisk-hero-section-container::before {
+  background: radial-gradient(circle, rgba(255, 193, 7, 0.25) 0%, transparent 70%);
+  width: 400px;
+  height: 400px;
+  top: 10%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.automatedrisk-hero-section-container::after {
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.2) 30%, transparent 70%);
+  width: 500px;
+  height: 500px;
+  bottom: 5%;
+  right: 10%;
+  transform: translate(50%, 50%);
+}
+
+/* === HERO CONTENT WRAPPER === */
+.automatedrisk-hero-content {
   max-width: 1000px;
-  background-color: #1e293b; 
+  width: 100%;
+  background-color: #1e293b;
   border-radius: 12px;
   padding: 3rem 4rem;
   text-align: left;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  z-index: 1; 
+  z-index: 1;
   position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
-  .AutomatedRisk-content-card {
-    padding: 2rem;
-  }
-}
-
-/* Title styling */
-.AutomatedRisk-title {
+/* === TITLE === */
+.automatedrisk-hero-title {
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.2;
@@ -39,26 +66,47 @@
 }
 
 @media (min-width: 768px) {
-  .AutomatedRisk-title {
-    font-size: 3rem;
+  .automatedrisk-hero-title {
+    font-size: 3.5rem;
   }
 }
 
-/* Description paragraph */
-.AutomatedRisk-description {
+/* === DESCRIPTION === */
+.automatedrisk-hero-description {
   font-size: 1.1rem;
   color: #cbd5e1;
   line-height: 1.6;
   margin-bottom: 2rem;
+  max-width: 850px;
 }
 
-/* NDA disclosure text */
-.AutomatedRisk-disclosure {
+/* === DISCLOSURE TEXT === */
+.automatedrisk-hero-disclosure {
   font-size: 0.9rem;
   color: #a0aec0;
   font-style: italic;
   margin: 0;
 }
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .automatedrisk-hero-section-container {
+    padding: 1.5rem 1rem 5rem;
+  }
+
+  .automatedrisk-hero-content {
+    padding: 2rem;
+  }
+
+  .automatedrisk-hero-title {
+    font-size: 2rem;
+  }
+
+  .automatedrisk-hero-description {
+    font-size: 1rem;
+  }
+}
+
 
 /* #####automatedrisk */
 /* Overall container for the section */

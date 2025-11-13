@@ -4,15 +4,9 @@ import "../ServicePageCss/Cyber.css";
 
 const CybersecurityHeroSection = () => {
   return (
-    <div className="Cybersecurity-hero-section-container">
-      {/* <div className="Cybersecurity-breadcrumb">
-        <a href="#" className="Cybersecurity-breadcrumb-item">Timspark</a>
-        <span className="Cybersecurity-breadcrumb-separator">›</span>
-        <a href="#" className="Cybersecurity-breadcrumb-item">Industry expertise</a>
-        <span className="Cybersecurity-breadcrumb-separator">›</span>
-        <a href="#" className="Cybersecurity-breadcrumb-item Cybersecurity-breadcrumb-active">Cybersecurity Services</a>
-      </div> */}
-           <Breadcrumb
+<>
+    <div className='breadcrumb-wrapper'>
+       <Breadcrumb
        items={[
           { label: "MorningMates", to: "/" },
           { label: "Services", to: "/services" },
@@ -20,6 +14,10 @@ const CybersecurityHeroSection = () => {
         ]}
   
       />
+    </div>
+    <div className="Cybersecurity-hero-section-container">
+    
+          
 
       <div className="Cybersecurity-hero-content">
         <h1 className="Cybersecurity-hero-title">
@@ -33,6 +31,7 @@ const CybersecurityHeroSection = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,232 +1,169 @@
-/* Overall container for the section */
+/* === CORE CONTAINER === */
 .Core-container {
   font-family: Arial, sans-serif;
   color: #fff;
   background-color: #0f172a;
-  padding: 6rem 1rem;
+  padding: 2rem 1rem 8rem;
   position: relative;
   overflow: hidden;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
 }
 
-
-.Core-header {
-  max-width: 800px;
-  margin: 0 auto 3rem;
+/* === BREADCRUMB (EXACT ALIGNMENT LIKE AI HERO) === */
+.Core-breadcrumb-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
   z-index: 1;
   position: relative;
+  text-align: left;
+}
+
+.Core-breadcrumb-wrapper .breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.Core-breadcrumb-wrapper .breadcrumb a {
+  color: #94a3b8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.Core-breadcrumb-wrapper .breadcrumb a:hover {
+  color: #ffc107;
+}
+
+.Core-breadcrumb-wrapper .breadcrumb span {
+  color: #94a3b8;
+}
+
+/* === HEADER === */
+.Core-header {
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .Core-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .Core-title {
-    font-size: 3rem;
-  }
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: #f1f5f9;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .Core-description {
-  font-size: 1.1rem;
-  color: #a0aec0;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: #94a3b8;
   line-height: 1.6;
-  margin: 0;
 }
 
-
-.Core-filters {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
-  z-index: 1;
-  position: relative;
-  flex-wrap: wrap;
-}
-
-.Core-filter-dropdown {
-  position: relative;
-  width: 200px;
-}
-
-.Core-filter-label {
-  position: absolute;
-  top: -10px;
-  left: 10px;
-  background-color: #0c0d1b;
-  color: #a0aec0;
-  font-size: 0.8rem;
-  padding: 0 5px;
-  z-index: 2;
-}
-
-.Core-dropdown-select {
-  width: 100%;
-  padding: 10px 15px;
-  background-color: #1e293b;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  color: #fff;
-  font-size: 1rem;
-  appearance: none; 
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.Core-dropdown-select:focus {
-  outline: none;
-  border-color: #ffc107;
-}
-
-
+/* === GRID === */
 .Core-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
-  z-index: 1;
-  position: relative;
+  padding: 0 2rem;
 }
 
-@media (min-width: 768px) {
-  .Core-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .Core-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-
+/* === CARDS === */
 .Core-card {
-  background-color: #1e293b; 
-  border-radius: 12px;
+  background-color: #1e293b;
+  border-radius: 1rem;
   padding: 1.5rem;
-  text-align: left;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Core-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .Core-card-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
+/* === TAGS === */
 .Core-tag {
   font-size: 0.75rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: 5px;
   font-weight: 600;
-  margin-right: 0.5rem;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  color: #fff;
 }
 
 .Core-tag-new {
-  background-color: #8b5cf6; 
-  color: #fff;
+  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
 }
 
 .Core-tag-completed {
-  background-color: #334155; 
-  color: #cbd5e1;
+  background: linear-gradient(90deg, #14b8a6, #0d9488);
 }
 
-.Core-card-image {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-
-.Core-card-image-blue {
-  background-color: #3b82f6;
-}
-
-.Core-card-image-green {
-  background-color: #10b981;
-}
-
-.Core-card-image-red {
-  background-color: #ef4444; 
-}
-
-.Core-card-image-purple {
-  background-color: #a855f7; 
-}
-
-.Core-card-image-orange {
-  background-color: #f97316; 
-}
-
-.Core-card-image-pink {
-  background-color: #ec4899; 
-}
-
-
-.Core-card-image svg {
-  width: 28px;
-  height: 28px;
-  color: #fff;
-}
+/* === ICON COLORS === */
+.Core-card-image-blue svg { color: #38bdf8; }
+.Core-card-image-green svg { color: #22c55e; }
+.Core-card-image-red svg { color: #ef4444; }
+.Core-card-image-purple svg { color: #a855f7; }
+.Core-card-image-orange svg { color: #f97316; }
+.Core-card-image-pink svg { color: #ec4899; }
 
 .Core-card-title {
   font-size: 1.3rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #f8fafc;
 }
 
 .Core-card-categories {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .Core-category {
-  font-size: 0.8rem;
-  background-color: #334155; 
+  background-color: #334155;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.85rem;
   color: #cbd5e1;
-  padding: 0.4rem 0.8rem;
-  border-radius: 5px;
-}
-
-.Core-card-specialists {
-  margin-top: auto; 
 }
 
 .Core-specialists-label {
   font-size: 0.75rem;
-  color: #a0aec0;
+  color: #94a3b8;
+  margin-bottom: 0.25rem;
   text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
 .Core-specialists-names {
   font-size: 0.9rem;
-  color: #cbd5e1;
-  line-height: 1.4;
-  margin: 0;
+  color: #e2e8f0;
 }
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 768px) {
+  .Core-breadcrumb-wrapper {
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+}
+
 /* whychoose */
 
 .WhyTimsparkCore-container {

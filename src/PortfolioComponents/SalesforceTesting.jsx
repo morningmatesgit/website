@@ -1,43 +1,42 @@
 import React from "react";
-import Breadcrumb from "../Breadcrumb"; 
+
+import Breadcrumb from "../Breadcrumb";
 
 const SalesforceTesting = () => {
   return (
-    <div className="salesforce-container">
+    <>
+    <div className="breadcrumb-wrapper">
+      <Breadcrumb
+        items={[
+          { label: "MorningMates", to: "/" },
+          { label: "Portfolio", to: "/portfolio" },
+          { label: "Salesforce Omnistudio Testing" },
+        ]}
+      />
+    </div>
+    <div className="salesforce-hero-section-container">
+   
+      
 
-      {/* ✅ Breadcrumb */}
-      <div className="salesforce-breadcrumb-wrapper">
-        <Breadcrumb
-          items={[
-            { label: "MorningMates", to: "/" },
-            { label: "Portfolio", to: "/portfolio" },
-            { label: "Salesforce Omnistudio Testing" }
-          ]}
-        />
-      </div>
+      
+      <div className="salesforce-hero-content">
+        
 
-      {/* ✅ Main Content */}
-      <div className="salesforce-card-container">
+        <h1 className="salesforce-hero-title">
+          Salesforce Omnistudio Testing for <br /> Insurance Company
+        </h1>
 
-        <div className="salesforce-text-section">
-          <h3 className="salesforce-subtitle">SALESFORCE OMNISTUDIO TESTING</h3>
+        <p className="salesforce-hero-description">
+          Testing and quality assurance (QA) development for a Salesforce-based
+          insurance platform, designed to support operations for a leading
+          global specialty insurer.
+        </p>
 
-          <h1 className="salesforce-title">
-            Salesforce Omnistudio Testing for Insurance Company
-          </h1>
-
-          <p className="salesforce-description">
-            Testing and quality assurance (QA) development for a Salesforce-based insurance platform,
-            designed to support operations for a leading global specialty insurer.
-          </p>
-
-          <a href="#" className="salesforce-download-button">DOWNLOAD</a>
-        </div>
-
+        <button className="salesforce-cta-button">DOWNLOAD</button>
       </div>
     </div>
+    </>
   );
 };
 
 export default SalesforceTesting;
-

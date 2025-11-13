@@ -1,118 +1,143 @@
-/* Hero Section Styles for the SoftwareDevelopmentHero Component */
 .software-hero-section {
-  background-color: #0f172a;
+  font-family: Arial, sans-serif;
   color: #fff;
-  padding: 6rem 1rem;
-  margin-left: 40px;
-}
-
-.software-hero-container {
-  max-width: 84rem;
-  margin: 0 auto;
+  background-color: #0f172a;
+  padding: 2rem 1rem 6rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
-@media (min-width: 768px) {
-  .software-hero-container {
-    flex-direction: row;
-    text-align: left;
-    justify-content: space-between;
-  }
+/* Glow background like AI */
+.software-hero-section::before,
+.software-hero-section::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: 0;
 }
 
-.software-hero-text {
+.software-hero-section::before {
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.3) 0%, transparent 70%);
+  width: 400px;
+  height: 400px;
+  top: 10%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.software-hero-section::after {
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.2) 30%, transparent 70%);
+  width: 500px;
+  height: 500px;
+  bottom: 5%;
+  right: 10%;
+  transform: translate(50%, 50%);
+}
+
+/* Content area */
+.software-hero-content {
+  max-width: 1200px;
   width: 100%;
-  margin-bottom: 2.5rem;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-  .software-hero-text {
-    width: 60%;
-    margin-bottom: 0;
-  }
-}
-
+/* Title */
 .software-hero-title {
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-weight: 800;
-  line-height: 1.25;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .software-hero-title {
-    font-size: 3.75rem;
+    font-size: 4.5rem;
   }
 }
 
-.software-hero-subtitle {
-  font-size: 1rem;
-  line-height: 1.625;
-  color: #cbd5e1;
-  max-width: 42rem;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 768px) {
-  .software-hero-subtitle {
-    font-size: 1.125rem;
-    margin: 0 0 2rem 0;
-  }
-}
-
-.software-contact-button {
-  background-color: #facc15;
-  color: #0f172a;
-  font-weight: 700;
-  padding: 0.75rem 2rem;
-  border-radius: 9999px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter;
-  transition-duration: 300ms;
-  cursor: pointer;
-  border: none;
-}
-
-.software-contact-button:hover {
-  background-color: #fde047;
-}
-
-/* Review Section */
-.software-hero-reviews {
-  width: 100%;
+/* Clutch Rating */
+.software-clutch-rating {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
-@media (min-width: 768px) {
-  .software-hero-reviews {
-    width: 40%;
-  }
+.software-reviewed-on {
+  font-size: 0.8rem;
+  color: #a0aec0;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
 }
 
-.software-review-stars {
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.software-stars-container {
+.software-stars {
   display: flex;
-  color: #facc15;
+  margin-right: 0.5rem;
 }
 
-.software-clutch-reviews {
-  font-size: 0.875rem;
-  color: #e2e8f0;
+.software-stars svg {
+  color: #ff0000;
+  width: 18px;
+  height: 18px;
+  margin-right: 2px;
 }
 
-.software-clutch-reviews span {
-  font-weight: 700;
+.software-clutch-text {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 0.5rem;
 }
+
+.software-reviews-count {
+  font-size: 0.9rem;
+  color: #a0aec0;
+}
+
+/* Description */
+.software-hero-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+}
+
+/* Button */
+.software-cta-button {
+  background-color: #ffc107;
+  color: #0c0d1b;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.software-cta-button:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
+
+
 /* Custom Software Services Section */
 .software-services-section {
   background-color: #0f172a;

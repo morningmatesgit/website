@@ -1,21 +1,24 @@
 import React from 'react';
 import Breadcrumb from '../Breadcrumb';
 
+
 const PortfolioVulnerability = () => {
   return (
+    <>
+    <div className='breadcrumb-wrapper'>
+      <Breadcrumb
+        items={[
+          { label: "MorningMates", to: "/" },
+          { label: "Portfolio", to: "/Portfolio" },
+          { label: "Vulnerability Management" }
+        ]}
+      />
+    </div>
     <div className="PortfolioVulnerability-container">
-    
-      <div className="PortfolioVulnerability-breadcrumb">
-        <Breadcrumb
-          items={[
-            { label: "MorningMates", to: "/" },
-            { label: "Portfolio", to: "/Portfolio" },
-            { label: "Vulnerability Management Solution" }
-          ]}
-        />
-      </div>
+      
+      
 
-      <div className="PortfolioVulnerability-content-wrapper">
+      <div className="PortfolioVulnerability-content">
         <h1 className="PortfolioVulnerability-title">
           Enterprise Vulnerability Management Solution
         </h1>
@@ -65,6 +68,7 @@ const PortfolioVulnerability = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

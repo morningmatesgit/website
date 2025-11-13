@@ -4,22 +4,20 @@ import Breadcrumb from '../Breadcrumb';
 
 const DataHeroSection = () => {
   return (
-     <div className="Data-hero-section-container">
-    {/* //   <div className="Data-breadcrumb">
-    //     <a href="#" className="Data-breadcrumb-item">Timspark</a>
-    //     <span className="Data-breadcrumb-separator">›</span>
-    //     <a href="#" className="Data-breadcrumb-item">Services</a>
-    //     <span className="Data-breadcrumb-separator">›</span>
-    //     <a href="#" className="Data-breadcrumb-item Data-breadcrumb-active">Data management services</a>
-    //   </div> */}
-          <Breadcrumb
+<>
+    <div className='breadcrumb-wrapper'>
+      <Breadcrumb
        items={[
           { label: "MorningMates", to: "/" },
           { label: "Services", to: "/services" },
-          { label: "Data Management Services" } // no `to` → this becomes active
+          { label: "Data Management Services" } 
         ]}
   
       />
+    </div>
+     <div className="Data-hero-section-container">
+    
+          
 
       <div className="Data-hero-content">
         <h1 className="Data-hero-title">
@@ -33,6 +31,7 @@ const DataHeroSection = () => {
         <button className="Data-cta-button">SEE OUR OFFERING</button>
       </div>
     </div>
+    </>
   );
 };
 

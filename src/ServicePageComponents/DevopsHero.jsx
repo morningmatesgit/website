@@ -4,15 +4,9 @@ import "../ServicePageCss/Devops.css";
 
 const DevOpsHeroSection = () => {
   return (
-     <div className="DevOps-hero-section-container">
-    {/* //   <div className="DevOps-breadcrumb">
-    //     <a href="#" className="DevOps-breadcrumb-item">Timspark</a>
-    //     <span className="DevOps-breadcrumb-separator">›</span>
-    //     <a href="#" className="DevOps-breadcrumb-item">Services</a>
-    //     <span className="DevOps-breadcrumb-separator">›</span>
-    //     <a href="#" className="DevOps-breadcrumb-item DevOps-breadcrumb-active">DevOps management & consulting</a>
-    //   </div> */}
-          <Breadcrumb
+<>
+    <div className="breadcrumb-wrapper">
+       <Breadcrumb
        items={[
           { label: "MorningMates", to: "/" },
           { label: "Services", to: "/services" },
@@ -20,6 +14,8 @@ const DevOpsHeroSection = () => {
         ]}
   
       />
+    </div>
+     <div className="DevOps-hero-section-container">
 
       <div className="DevOps-hero-content">
         <h1 className="DevOps-hero-title">
@@ -34,6 +30,7 @@ const DevOpsHeroSection = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

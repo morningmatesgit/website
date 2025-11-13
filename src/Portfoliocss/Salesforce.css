@@ -1,100 +1,111 @@
-.salesforce-container {
-  --salesforce-bg-color: #0f172a;
-  --salesforce-text-color-primary: #f8fafc;
-  --salesforce-text-color-secondary: #94a3b8;
-  --salesforce-yellow-accent: #facc15;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: var(--salesforce-bg-color);
-}
-
-.salesforce-card-container {
-  background-color: var(--salesforce-bg-color);
-  border-radius: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  max-width: 900px;
+.salesforce-hero-section-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a;
+  padding: 2rem 1rem 6rem;
+  position: relative;
   overflow: hidden;
-  margin: 0;
-}
-
-.salesforce-text-section {
-  padding: 2rem;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
 }
 
-.salesforce-subtitle {
-  color: var(--salesforce-text-color-secondary);
-  font-size: 0.875rem;
-  font-weight: 500;
-  margin: 0;
-  text-transform: uppercase;
-  font-family: 'Inter', sans-serif;
+/* Glowing Background */
+.salesforce-hero-section-container::before,
+.salesforce-hero-section-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: 0;
 }
 
-.salesforce-title {
-  color: var(--salesforce-text-color-primary);
-  font-size: 2.25rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0.75rem 0 1rem 0;
-  font-family: 'Inter', sans-serif;
+.salesforce-hero-section-container::before {
+  background: radial-gradient(circle, rgba(250, 204, 21, 0.25) 0%, transparent 70%);
+  width: 400px;
+  height: 400px;
+  top: 10%;
+  left: 15%;
+  transform: translate(-50%, -50%);
 }
 
-.salesforce-description {
-  color: var(--salesforce-text-color-secondary);
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-  font-family: 'Inter', sans-serif;
+.salesforce-hero-section-container::after {
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.2) 30%, transparent 70%);
+  width: 500px;
+  height: 500px;
+  bottom: 5%;
+  right: 10%;
+  transform: translate(50%, 50%);
 }
 
-.salesforce-download-button {
-  background-color: var(--salesforce-yellow-accent);
-  color: #0f172a;
+/* Hero Content */
+.salesforce-hero-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+/* Section Eyebrow */
+.salesforce-text-eyebrow {
+  color: #facc15;
+  font-size: 0.9rem;
   font-weight: 600;
-  padding: 0.75rem 2rem;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s, transform 0.2s;
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
 }
 
-.salesforce-download-button:hover {
-  background-color: #f5cf07;
+/* Title */
+.salesforce-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .salesforce-hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+/* Description */
+.salesforce-hero-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+}
+
+/* CTA Button */
+.salesforce-cta-button {
+  background-color: #ffc107;
+  color: #0c0d1b;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.salesforce-cta-button:hover {
+  background-color: #e0a800;
   transform: translateY(-2px);
 }
 
-.salesforce-image-section {
-  flex-shrink: 0;
-}
-
-.salesforce-image-section img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .salesforce-card-container {
-    flex-direction: column;
-  }
-  .salesforce-text-section {
-    padding: 1.5rem;
-  }
-  .salesforce-title {
-    font-size: 1.75rem;
-  }
-}
 /* SalesforceChallenge */
 .salesforce-container {
   background-color: #0f172a;

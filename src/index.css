@@ -1540,3 +1540,45 @@ h2 {
 
 
 
+
+/* Breadcrumb wrapper placed outside hero section */
+.breadcrumb-wrapper {
+  margin-left: 80px;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #b0b8c5;
+  text-align: left;
+  white-space: nowrap;    /* Keep in single line */
+  overflow: hidden;       /* Hide any overflow */
+  text-overflow: ellipsis; /* Add ... if text too long */
+}
+
+.breadcrumb-wrapper a {
+  color: #b0b8c5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb-wrapper a:hover {
+  color: #facc15; /* yellow hover */
+}
+
+.breadcrumb-wrapper span {
+  color: #facc15;
+  margin: 0 6px;
+}
+
+.breadcrumb-wrapper .active {
+  color: #ffffff;
+  pointer-events: none;
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .breadcrumb-wrapper {
+    margin-left: 20px;
+    font-size: 12px;       /* Smaller text */
+    margin-top: 20px;
+  }
+}

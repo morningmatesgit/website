@@ -1,85 +1,112 @@
-.carbon-container {
-            background-color: #0f172a;
-            background-image: radial-gradient(circle at 50% 50%, rgba(31, 41, 55, 0.7) 0%, rgba(15, 23, 42, 0.7) 100%);
-            color: #f8fafc;
-            min-height: 100vh;
-            padding: 4rem 2rem;
-            font-family: 'Inter', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-          }
-          
-          .carbon-text-content {
-            background-color: #1e293b;
-            border-radius: 1rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
-            width: 100%;
-            padding: 4rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-          }
+.carbon-hero-section-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a;
+  padding: 2rem 1rem 6rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
 
-          .carbon-text-eyebrow {
-            color: #facc15;
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            letter-spacing: 0.05em;
-          }
+/* Glowing Background */
+.carbon-hero-section-container::before,
+.carbon-hero-section-container::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: 0;
+}
 
-          .carbon-text-title {
-            font-size: 2.75rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin: 0 0 1rem;
-          }
+.carbon-hero-section-container::before {
+  background: radial-gradient(circle, rgba(0, 255, 157, 0.3) 0%, transparent 70%);
+  width: 400px;
+  height: 400px;
+  top: 10%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
 
-          .carbon-text-description {
-            color: #94a3b8;
-            font-size: 1rem;
-            line-height: 1.5;
-            margin: 0 0 2rem;
-          }
+.carbon-hero-section-container::after {
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.2) 30%, transparent 70%);
+  width: 500px;
+  height: 500px;
+  bottom: 5%;
+  right: 10%;
+  transform: translate(50%, 50%);
+}
 
-          .carbon-download-button {
-            background-color: #facc15;
-            color: #1e293b;
-            font-weight: 600;
-            padding: 0.75rem 2rem;
-            border-radius: 0.5rem;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-          }
+/* Hero Content */
+.carbon-hero-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
 
-          .carbon-download-button:hover {
-            background-color: #eab308;
-          }
+/* Section Eyebrow */
+.carbon-text-eyebrow {
+  color: #facc15;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
 
-          @media (max-width: 1024px) {
-            .carbon-text-content {
-              padding: 2rem;
-            }
-            .carbon-text-title {
-              font-size: 2rem;
-            }
-          }
+/* Title */
+.carbon-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
 
-          @media (max-width: 640px) {
-            .carbon-container {
-              padding: 2rem 1rem;
-            }
-            .carbon-text-title {
-              font-size: 1.75rem;
-            }
-          }
+@media (min-width: 768px) {
+  .carbon-hero-title {
+    font-size: 4.5rem;
+  }
+}
+
+/* Description */
+.carbon-hero-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+}
+
+/* CTA Button */
+.carbon-cta-button {
+  background-color: #ffc107;
+  color: #0c0d1b;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carbon-cta-button:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
+
 
           /* carbonChallenge */
          

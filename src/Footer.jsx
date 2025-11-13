@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
        
-        <div className="footer-logo">MorningMates</div>
+        <div className="footer-logo">Morningmates</div>
          
 
         <div className="footer-columns">
@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>Copyright © 2025 MorningMates</p>
+          <p>Copyright © 2025 Morningmates</p>
           {/* <p><Link to="/privacy-policy">Privacy Policy</Link></p> */}
         </div>
       </div>

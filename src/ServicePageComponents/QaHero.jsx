@@ -5,6 +5,20 @@ import Breadcrumb from '../Breadcrumb';
 
 const QAHeroSection = () => {
   return (
+
+      <>
+    <div className='breadcrumb-wrapper'>
+      <Breadcrumb
+             items={[
+                { label: "MorningMates", to: "/" },
+                { label: "Services", to: "/services" },
+                { label: "QA Services" } // no `to` → this becomes active
+              ]}
+        
+            />
+    </div>
+            
+      
     <div className="QAHero-section-container">
       {/* <div className="QAHero-breadcrumb">
         <a href="#" className="QAHero-breadcrumb-item">Timspark</a>
@@ -13,16 +27,7 @@ const QAHeroSection = () => {
         <span className="QAHero-breadcrumb-separator">›</span>
         <a href="#" className="QAHero-breadcrumb-item QAHero-breadcrumb-active">QA & testing</a>
       </div> */}
-      <>
-            <Breadcrumb
-             items={[
-                { label: "MorningMates", to: "/" },
-                { label: "Services", to: "/services" },
-                { label: "QA Services" } // no `to` → this becomes active
-              ]}
-        
-            />
-      </>
+    
 
       <div className="QAHero-content">
         <h1 className="QAHero-title">
@@ -47,6 +52,7 @@ const QAHeroSection = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

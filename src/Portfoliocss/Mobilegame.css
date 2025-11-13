@@ -1,132 +1,174 @@
-.carbon-game-container {
-            background-color: #0f172a;
-            color: #f8fafc;
-            min-height: 100vh;
-            padding: 4rem 2rem;
-            font-family: 'Inter', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-          }
-          
-          .carbon-game-content {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-            max-width: 1200px;
-            width: 100%;
-          }
+.MobileGameHero-container {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #0f172a;
+  padding: 2rem 1rem 6rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
 
-          .carbon-game-header {
-            text-align: left;
-            margin-bottom: 2rem;
-          }
+/* === Glow Background (AI Style) === */
+.MobileGameHero-container::before,
+.MobileGameHero-container::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: 0;
+}
 
-          .carbon-game-eyebrow {
-            color: #e2e8f0;
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            letter-spacing: 0.05em;
-          }
+.MobileGameHero-container::before {
+  background: radial-gradient(circle, rgba(138, 43, 226, 0.3) 0%, transparent 70%);
+  width: 400px;
+  height: 400px;
+  top: 10%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
 
-          .carbon-game-title {
-            font-size: 3rem;
-            font-weight: 700;
-            line-height: 1.2;
-            margin: 0;
-          }
+.MobileGameHero-container::after {
+  background: radial-gradient(circle, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.2) 30%, transparent 70%);
+  width: 500px;
+  height: 500px;
+  bottom: 5%;
+  right: 10%;
+  transform: translate(50%, 50%);
+}
 
-          .carbon-game-description {
-            color: #94a3b8;
-            font-size: 1rem;
-            line-height: 1.5;
-            max-width: 500px;
-          }
+/* === Content Wrapper === */
+.MobileGameHero-content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
 
-          .carbon-game-review {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-top: 1rem;
-          }
+/* === Subheading === */
+.MobileGameHero-subtitle {
+  font-size: 0.9rem;
+  color: #a0aec0;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
 
-          .carbon-game-review-text {
-            color: #cbd5e1;
-            font-size: 0.875rem;
-            font-weight: 500;
-          }
+/* === Main Title === */
+.MobileGameHero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
 
-          .carbon-game-review-stars {
-            color: #facc15;
-          }
+@media (min-width: 768px) {
+  .MobileGameHero-title {
+    font-size: 4.5rem;
+  }
+}
 
-          .carbon-game-stats {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            text-align: left;
-            width: 100%;
-          }
+/* === Description === */
+.MobileGameHero-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
 
-          .carbon-game-stat-card {
-            background-color: rgba(30, 41, 59, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 1rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            padding: 2rem;
-            backdrop-filter: blur(8px);
-          }
+/* === Review Section === */
+.MobileGameHero-review {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
 
-          .carbon-game-stat-title {
-            color: #f8fafc;
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-          }
+.MobileGameHero-review-text {
+  font-size: 0.9rem;
+  color: #a0aec0;
+}
 
-          .carbon-game-stat-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 0.5rem;
-          }
+.MobileGameHero-review-stars {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 
-          .carbon-game-stat-item-label {
-            color: #94a3b8;
-            font-size: 1rem;
-          }
+/* === Stats Section === */
+.MobileGameHero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
 
-          .carbon-game-stat-item-value {
-            color: #cbd5e1;
-            font-size: 1rem;
-            font-weight: 500;
-          }
+.MobileGameHero-card {
+  background-color: rgba(30, 41, 59, 0.5);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
 
-          .carbon-game-stat-disclaimer {
-            color: #94a3b8;
-            font-size: 0.75rem;
-            margin-top: 1rem;
-          }
+.MobileGameHero-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
 
-          @media (max-width: 1024px) {
-            .carbon-game-title {
-              font-size: 2.5rem;
-            }
-          }
+.MobileGameHero-card-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
 
-          @media (max-width: 768px) {
-            .carbon-game-stats {
-              grid-template-columns: 1fr;
-            }
-          }
+.MobileGameHero-card-label {
+  color: #94a3b8;
+  font-size: 1rem;
+}
 
-          @media (max-width: 640px) {
-            .carbon-game-title {
-              font-size: 2rem;
-            }
-          }
+.MobileGameHero-card-value {
+  color: #cbd5e1;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.MobileGameHero-card-note {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-top: 1rem;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .MobileGameHero-title {
+    font-size: 2.5rem;
+  }
+
+  .MobileGameHero-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .MobileGameHero-title {
+    font-size: 2rem;
+  }
+}
+
 
           /* mobileabout */
           
