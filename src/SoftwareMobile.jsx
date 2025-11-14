@@ -3,6 +3,7 @@ import React from 'react';
 
 const AppDevOps = () => {
   return (
+    <div className='container'>
     <div className="AppDevOps-container">
       <div className="AppDevOps-section">
         <div className="AppDevOps-content">
@@ -123,6 +124,7 @@ const AppDevOps = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -4,8 +4,8 @@ import Breadcrumb from './Breadcrumb';
 
 function SoftwareDevelopmentHero() {
   return (
-    <>
-      {/* Breadcrumb kept outside for free positioning */}
+    <div className=''>
+      
       <div className="breadcrumb-wrapper">
         <Breadcrumb
           items={[
@@ -57,7 +57,7 @@ function SoftwareDevelopmentHero() {
           <button className="software-cta-button">CONTACT US</button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

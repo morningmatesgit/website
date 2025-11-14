@@ -12,6 +12,7 @@ function CustomSoftwareServices() {
   ];
 
   return (
+    <div className="container">
     <section className="software-services-section">
       <div className="software-services-container">
         <h2 className="software-services-title">
@@ -43,6 +44,7 @@ function CustomSoftwareServices() {
         </div>
       </div>
     </section>
+    </div>
   );
 }
 

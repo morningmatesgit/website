@@ -4,7 +4,7 @@ import Breadcrumb from "../Breadcrumb";
 
 const WebHero = () => {
   return (
-    <div className="cointainer">
+    <div className="">
      <div className="breadcrumb-wrapper">
         <Breadcrumb
           items={[

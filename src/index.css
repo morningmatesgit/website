@@ -1586,7 +1586,28 @@ h2 {
 
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 24px;
+
+  /* Responsive shrinking gap */
+  padding-left: clamp(12px, 5vw, 46px);
+  padding-right: clamp(12px, 5vw, 46px);
+}
+
+.container h1 {
+  font-size: clamp(24px, 4vw, 40px);
+}
+
+.container p {
+  font-size: clamp(14px, 1.6vw, 18px);
+}
+
+
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 10px;   /* move right */
+    padding-right: 40px;
+  }
 }
