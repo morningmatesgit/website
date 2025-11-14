@@ -35,6 +35,7 @@ const WebFaq = () => {
   };
 
   return (
+    <div className="container"> 
     <section className="faq-section">
       <h2>
         Questions?
@@ -63,6 +64,7 @@ const WebFaq = () => {
         ))}
       </div>
     </section>
+    </div>
   );
 };
 

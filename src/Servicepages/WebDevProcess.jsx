@@ -3,6 +3,7 @@ import './Web.css';
 
 const WebDevProcess = () => {
   return (
+    <div className='container'>
     <div className="process-container">
       <div className="process-header">
         <h1 className="process-main-title">Our web development process</h1>
@@ -114,6 +115,7 @@ const WebDevProcess = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

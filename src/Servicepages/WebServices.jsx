@@ -3,6 +3,7 @@ import './Web.css';
 
 const WebServices = () => {
   return (
+    <div className='container'>
     <div className="web-services-container">
       <div className="web-services-header">
         <h1 className="header-main-title">Our web development services</h1>
@@ -109,6 +110,7 @@ const WebServices = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

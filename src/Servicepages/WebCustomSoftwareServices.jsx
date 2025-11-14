@@ -3,11 +3,9 @@ import React from 'react';
 
 const SoftwarePage = () => {
   return (
+    <div className='container'> 
     <div>
-      {/* Custom Hero Section */}
-      
-
-      {/* Custom Software Services Section */}
+    
       <section className="custom-services-section">
         <div className="custom-services-container">
           <h2 className="custom-services-title">Our Custom Software Services</h2>
@@ -158,6 +156,7 @@ const SoftwarePage = () => {
           </div>
         </div>
       </section>
+    </div>
     </div>
   );
 };

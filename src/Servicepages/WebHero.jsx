@@ -4,7 +4,7 @@ import Breadcrumb from "../Breadcrumb";
 
 const WebHero = () => {
   return (
-    <>
+    <div className="cointainer">
      <div className="breadcrumb-wrapper">
         <Breadcrumb
           items={[
@@ -30,7 +30,7 @@ const WebHero = () => {
         <button className="cta-button">GET IN TOUCH</button>
       </div>
     </div>
-    </>
+    </div>
   );
 };
 
