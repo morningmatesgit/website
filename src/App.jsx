@@ -32,6 +32,11 @@ import PortfolioCarbonPage from "./PortfolioPages/PortfolioCarbon"
 import PortfolioSalesforcePage from "./PortfolioPages/PortfolioSalesforce"
 import PortfolioMobileGamePage from "./PortfolioPages/PortfolioMobileGame"
 import WebFaq from "./WebFaq"
+import PrivacyPolicy from "./PrivacyPolicyComponents/PrivacyPolicy"
+import PrivacyPolicyPage from "./PrivacyPolicyPages/PrivacyPolicyPage"
+import TermsconditionPage from "./PrivacyPolicyPages/Terms&conditionPages"
+import RefundPolicy from "./PrivacyPolicyComponents/RefundPolicy"
+import RefundPolicyPage from "./PrivacyPolicyPages/RefundPolicyPage"
 
 function App() {
   return (
@@ -54,8 +59,34 @@ function App() {
               <section id="faq"><FAQ /></section>
               <section id="contact"><Contact /></section>
               <Footer />
+              
             </>
           }
+        />
+        {/* PrivacyPolicy */}
+        <Route 
+          path="/privacy-policy" 
+          element={
+            <>
+              <PrivacyPolicyPage/>
+            </>
+          } 
+        />
+        <Route 
+          path="/terms-and-conditions" 
+          element={
+            <>
+            <TermsconditionPage/>
+            </>
+          } 
+        />
+        <Route 
+          path="/refund-policy" 
+          element={
+            <>
+         <RefundPolicyPage/>
+            </>
+          } 
         />
 
         {/* Service Pages */}

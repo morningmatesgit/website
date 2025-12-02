@@ -79,10 +79,16 @@ const Footer = () => {
           </div> */}
 
           <div className="footer-col clutch-review">
-            <h4>REVIEWED ON</h4>
-            <div className="clutch-stars">⭐⭐⭐⭐⭐</div>
-            <p><Link to="#">Clutch</Link> 9 Reviews</p>
-          </div>
+  <h4>Policies</h4>
+
+  <ul>
+    <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+    <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
+    <li><Link to="/refund-policy">Refund Policy</Link></li>
+  </ul>
+</div>
+
+
         </div>
 
         <div className="footer-bottom">

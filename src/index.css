@@ -645,11 +645,10 @@ h2 {
 }
 
 /* ----- Clutch Review Section ----- */
-.clutch-review {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.footer-col ul li {
+  margin-bottom: 0.6rem;
 }
+
 
 .clutch-stars {
   font-size: 1.1rem;
