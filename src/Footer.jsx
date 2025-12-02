@@ -42,8 +42,8 @@ const Footer = () => {
             <h4>CONNECT WITH US</h4>
             <div className="social-icons">
               <Link to="https://www.linkedin.com/company/morningmatesin" className="social-icon">in</Link>
-              <Link to="#" className="social-icon">X</Link>
-              <Link to="#" className="social-icon">O</Link>
+              {/* <Link to="#" className="social-icon">X</Link>
+              <Link to="#" className="social-icon">O</Link> */}
             </div>
           
 

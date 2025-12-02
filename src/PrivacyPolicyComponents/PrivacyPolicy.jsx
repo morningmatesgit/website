@@ -21,14 +21,14 @@ const PrivacyPolicy = () => {
         .
       </p>
 
-      <h2 className="privacy-heading">Website Visitors</h2>
+      <h2 className="privacy-heading"> 1. Website Visitors</h2>
       <p className="privacy-text">
         Morningmates follows a standard procedure for collecting, processing,
         and storing personal data in accordance with applicable laws.
       </p>
 
       <h2 className="privacy-heading">
-        Non-personally Identifiable Information and Log Data
+        2. Non-personally Identifiable Information and Log Data
       </h2>
       <p className="privacy-text">
         This includes data such as IP addresses, browser types, device
@@ -38,7 +38,7 @@ const PrivacyPolicy = () => {
         website, track user behavior, and gather demographic information.
       </p>
 
-      <h2 className="privacy-heading">Personal Data</h2>
+      <h2 className="privacy-heading">3. Personal Data</h2>
       <p className="privacy-text">
         Morningmates does not collect personally identifiable information (PII)
         such as your name, email address, or phone number unless you voluntarily
@@ -48,28 +48,28 @@ const PrivacyPolicy = () => {
         any time.
       </p>
 
-      <h2 className="privacy-heading">Cookies</h2>
+      <h2 className="privacy-heading">4. Cookies</h2>
       <p className="privacy-text">
         Morningmates uses cookies to store information about visitors’
         preferences and optimize the website experience by customizing our web
         page content based on visitors’ browser type or other information.
       </p>
 
-      <h2 className="privacy-heading">Third-Party Services</h2>
+      <h2 className="privacy-heading">5. Third-Party Services</h2>
       <p className="privacy-text">
         We may use third-party analytics tools such as Google Analytics to help
         us understand how users interact with our website and to improve our
         services.
       </p>
 
-      <h2 className="privacy-heading">Data Security</h2>
+      <h2 className="privacy-heading">6. Data Security</h2>
       <p className="privacy-text">
         We implement reasonable security measures to protect your personal
         information. However, no method of transmission over the Internet is
         completely secure.
       </p>
 
-      <h2 className="privacy-heading">Children’s Information</h2>
+      <h2 className="privacy-heading">7. Children’s Information</h2>
       <p className="privacy-text">
         Morningmates does not knowingly collect any Personal Identifiable
         Information from children under the age of 18. If you believe that your
@@ -77,13 +77,13 @@ const PrivacyPolicy = () => {
         contact us immediately.
       </p>
 
-      <h2 className="privacy-heading">Consent</h2>
+      <h2 className="privacy-heading">8. Consent</h2>
       <p className="privacy-text">
         By using our website, you hereby consent to our Privacy Policy and agree
         to its terms.
       </p>
 
-      <h2 className="privacy-heading">Contact Us</h2>
+      <h2 className="privacy-heading">9. Contact Us</h2>
       <p className="privacy-text">
         If you have any questions about this Privacy Policy, you can contact us
         at:

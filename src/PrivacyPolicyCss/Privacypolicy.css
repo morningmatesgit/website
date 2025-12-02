@@ -1,123 +1,331 @@
 .privacy-container {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;   /* White only for this page */
-  color: #000000;              /* Black only for this page */
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(
+      circle at 10% 20%,
+     
+    ),
+    linear-gradient(135deg, #040b1e 0%, #0b1e3a 100%);
+  color: #e5e7eb;
   line-height: 1.8;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+
+  display: block !important;
+  text-align: left !important;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .privacy-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #000000;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #fbbf24;   /* yellow */
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  display: block !important;
+  width: 100%;
 }
+
 
 .privacy-date {
-  color: #444444;
+  color: #b0b7c3;
   font-size: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  text-align: left !important;
 }
 
+
 .privacy-heading {
-  font-size: 22px;
-  font-weight: 600;
-  margin-top: 35px;
-  margin-bottom: 10px;
-  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 8px;
+  color: #fbbf24;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left !important;
 }
 
 .privacy-text {
   font-size: 16px;
-  margin-bottom: 12px;
-  color: #000000;
+  margin-bottom: 14px;
+  color: #d1d5db;
+  text-align: left !important;
 }
 
+
 .privacy-text a {
-  color: #0066cc;
+  color: #fbbf24;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .privacy-text a:hover {
   text-decoration: underline;
 }
 
-/* terms&conditions */
+/* ============ MOBILE RESPONSIVE ============ */
+
+@media (max-width: 768px) {
+  .privacy-container {
+    margin: 40px 16px;
+    padding: 32px 20px;
+    border-radius: 14px;
+  }
+
+  .privacy-title {
+    font-size: 30px;
+  }
+
+  .privacy-heading {
+    font-size: 12px;
+  }
+
+  .privacy-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-title {
+    font-size: 26px;
+  }
+
+  .privacy-container {
+    padding: 26px 16px;
+  }
+
+  .privacy-text {
+    font-size: 14px;
+  }
+}
+
+
+
+/* ========== TERMS & CONDITIONS STYLES (SAME AS PRIVACY & REFUND) ========== */
 
 .terms-container {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #000000;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(
+      circle at 10% 20%,
+      
+    ),
+    linear-gradient(135deg, #040b1e 0%, #0b1e3a 100%);
+  color: #e5e7eb;
   line-height: 1.8;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+
+  display: block !important;
+  text-align: left !important;
 }
 
+/* Main Title */
 .terms-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #000000;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #fbbf24;   /* yellow */
+  text-align: left !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  display: block !important;
+  width: 100%;
 }
 
+/* Date */
 .terms-date {
-  color: #444444;
+  color: #b0b7c3;
   font-size: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  text-align: left !important;
 }
 
+/* Section Headings */
 .terms-heading {
-  font-size: 22px;
-  font-weight: 600;
-  margin-top: 35px;
-  margin-bottom: 10px;
-  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 8px;
+  color: #fbbf24;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left !important;
 }
 
+/* Paragraph Text */
 .terms-text {
   font-size: 16px;
-  margin-bottom: 12px;
-  color: #000000;
+  margin-bottom: 14px;
+  color: #d1d5db;
+  text-align: left !important;
+}
+
+/* Links */
+.terms-text a {
+  color: #fbbf24;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.terms-text a:hover {
+  text-decoration: underline;
+}
+
+/* ============ MOBILE RESPONSIVE ============ */
+
+@media (max-width: 768px) {
+  .terms-container {
+    margin: 40px 16px;
+    padding: 32px 20px;
+    border-radius: 14px;
+  }
+
+  .terms-title {
+    font-size: 30px;
+  }
+
+  .terms-heading {
+    font-size: 12px;
+  }
+
+  .terms-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-title {
+    font-size: 26px;
+  }
+
+  .terms-container {
+    padding: 26px 16px;
+  }
+
+  .terms-text {
+    font-size: 14px;
+  }
 }
 
 
-/* RefundPolicy */
+/* ========== REFUND POLICY STYLES (SAME AS PRIVACY) ========== */
+
 .refund-container {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #000000;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(
+      circle at 10% 20%,
+      
+    ),
+    linear-gradient(135deg, #040b1e 0%, #0b1e3a 100%);
+  color: #e5e7eb;
   line-height: 1.8;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+
+  display: block !important;
+  text-align: left !important;
 }
 
+/* Main Title */
 .refund-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #000000;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #fbbf24;
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+  display: block ;
+  width: 100%;
 }
 
+/* Date */
 .refund-date {
-  color: #444444;
+  color: #b0b7c3;
   font-size: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+  text-align: left ;
 }
 
+/* Section Headings */
 .refund-heading {
-  font-size: 22px;
-  font-weight: 600;
-  margin-top: 35px;
-  margin-bottom: 10px;
-  color: #000000;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 36px;
+  margin-bottom: 8px;
+  color: #fbbf24;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
 }
+
 
 .refund-text {
   font-size: 16px;
-  margin-bottom: 12px;
-  color: #000000;
+  margin-bottom: 14px;
+  color: #d1d5db;
+  text-align: left !important;
 }
+
+.refund-text a {
+  color: #fbbf24;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.refund-text a:hover {
+  text-decoration: underline;
+}
+
+/* ============ MOBILE RESPONSIVE ============ */
+
+@media (max-width: 768px) {
+  .refund-container {
+    margin: 40px 16px;
+    padding: 32px 20px;
+    border-radius: 14px;
+  }
+
+  .refund-title {
+    font-size: 30px;
+  }
+
+  .refund-heading {
+    font-size: 12px;
+  }
+
+  .refund-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .refund-title {
+    font-size: 26px;
+  }
+
+  .refund-container {
+    padding: 26px 16px;
+  }
+
+  .refund-text {
+    font-size: 14px;
+  }
+}
+
+
+
+
